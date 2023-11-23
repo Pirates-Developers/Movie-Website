@@ -1,9 +1,8 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/Router";
+
 function App() {
-  return (
-    <div className="App">
-      <h1>Pirates Movie App</h1>
-    </div>
-  );
+  return <RouterProvider router={router}/>
 }
 
 export default App;
