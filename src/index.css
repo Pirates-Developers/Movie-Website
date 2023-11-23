@@ -1,1 +1,25 @@
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
+:root {
+  /* Colors */
+  --black: #000;
+  --white: #fff;
+  --blue: #12b5fb;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(140, 22, 159, 0.95) 0%,
+    rgba(154, 52, 208, 0.95) 47.36%,
+    rgba(92, 97, 217, 0.95) 100.12%,
+    rgba(18, 181, 251, 0.95) 108.51%,
+    rgba(18, 181, 251, 0.95) 108.51%
+  );
+
+  /* Fonts */
+  --firago: "FiraGO", sans-serif;
+}
+
+body {
+  font-family: var(--firago);
+  background-color: var(--black);
+  color: var(--white);
+}
