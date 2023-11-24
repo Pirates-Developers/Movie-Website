@@ -1,8 +1,15 @@
+import React from "react";
+import Header from "./Components/Header-Sidebar/Header";
+import Sidebar from "./Components/Header-Sidebar/Sidebar";
+import SearchForm from "./Components/SearchBar/SearchBar";
+
 function App() {
   return (
-    <div>
-      <h1>Pirates Movie App</h1>
-    </div>
+    <>
+      <Header />
+      <Sidebar />
+      <SearchForm />
+    </>
   );
 }
 
