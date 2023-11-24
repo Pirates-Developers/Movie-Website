@@ -1,3 +1,4 @@
+import "./main.css"
 import React from "react";
 import SearchBar from "./SearchBar/SearchBar";
 import SideBar from "../Header-Sidebar/Sidebar";
