@@ -1,0 +1,17 @@
+.main {
+  
+}
+.image.container {
+  position: relative;
+  margin-left: 140px;
+  padding-left: 140px;
+  overflow: hidden;
+  }
+.gameOfThroneImg {
+  padding-left: 140px;
+    margin-left: 140px;
+    padding: 140px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
