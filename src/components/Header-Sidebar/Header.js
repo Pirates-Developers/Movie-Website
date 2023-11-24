@@ -1,11 +1,10 @@
 import "./header.css";
-import mainPageIcon from "../../images/mainPageIcon.png";
 
 function Header() {
   return (
     <div className="header">
       <div className="absolute cursor-pointer">
-        <img src={mainPageIcon} alt="mainIcon" />
+        <img src="/assets/images/mainPageIcon.png" alt="mainIcon" />
       </div>
       <div className="header-end">
         <div src="/" className="FIlMEBI hoverable">
