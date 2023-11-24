@@ -1,4 +1,8 @@
 /* Header ლოგო & ტექსტი */
+.mainPageIcon {
+  position: absolute;
+  cursor: pointer;
+}
 .hoverable:hover {
   cursor: pointer;
   color: red;

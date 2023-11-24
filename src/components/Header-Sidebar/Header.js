@@ -1,24 +1,25 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <div className="absolute cursor-pointer">
+      <div className="mainPageIcon">
         <img src="/assets/images/mainPageIcon.png" alt="mainIcon" />
       </div>
       <div className="header-end">
-        <div src="/" className="FIlMEBI hoverable">
+        <Link to="/*" className="FIlMEBI hoverable">
           ფილმები
-        </div>
-        <div src="/" className="SERIALEBI hoverable">
+        </Link>
+        <Link to="/*" className="SERIALEBI hoverable">
           სერიალები
-        </div>
-        <div src="/" className="WIGNEBI hoverable">
+        </Link>
+        <Link to="/*" className="WIGNEBI hoverable">
           წიგნები
-        </div>
-        <div src="/" className="ANIMACIEBI hoverable">
+        </Link>
+        <Link to="/*" className="ANIMACIEBI hoverable">
           ანიმე ანიმაციები
-        </div>
+        </Link>
       </div>
     </div>
   );

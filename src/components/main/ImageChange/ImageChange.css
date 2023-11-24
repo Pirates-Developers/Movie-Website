@@ -1,0 +1,7 @@
+.main {
+  display: inline-flex;
+}
+.image-container,
+.image-container>img {
+  width: 100%;
+}
