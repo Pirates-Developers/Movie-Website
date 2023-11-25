@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  background-color: rgba(23, 23, 23, 0.5);
+  z-index: 10;
+}
+
+.header-link {
+  font-style: normal;
+  font-weight: 600;
+  color: #e7e7e7;
+}
+
+.header-link:last-of-type {
+  margin-right: 0;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .header {
+    padding: 1.87em 10em;
+  }
+
+  .header-link {
+    font-size: 1.125em;
+    margin-right: 4.2em;
+  }
+}

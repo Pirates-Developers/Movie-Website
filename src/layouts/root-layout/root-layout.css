@@ -1,0 +1,22 @@
+.root-layout {
+  position: relative;
+  overflow: hidden;
+}
+
+.root-layout,
+.root-layout > .main-content {
+  width: 100%;
+  height: 100%;
+}
+
+.root-layout > .main-content {
+  overflow: auto;
+  position: relative;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .root-layout > .main-content > div {
+    padding: 0 2.5em;
+  }
+}

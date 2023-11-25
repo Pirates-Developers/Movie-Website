@@ -1,0 +1,47 @@
+/* Desktop */
+.footer-link {
+  font-style: normal;
+  font-weight: 300;
+  color: #fff0f0;
+}
+
+.footer-link:last-of-type {
+  margin-right: 0;
+}
+
+.copyright {
+  opacity: 0.65;
+}
+
+@media only screen and (width >= 1024px) {
+  .footer {
+    padding: 3.75em 0;
+  }
+
+  .footer-brand-logo {
+    margin-bottom: 5.5em;
+  }
+
+  .footer-brand-logo > img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .footer-links {
+    margin-bottom: 6.75em;
+  }
+
+  .footer-link {
+    font-size: 1.125em;
+    margin-right: 4em;
+  }
+
+  .footer-social-link > img {
+    width: 4.75em;
+    height: 4.75em;
+  }
+
+  .footer-social-links {
+    margin-bottom: 1.44em;
+  }
+}

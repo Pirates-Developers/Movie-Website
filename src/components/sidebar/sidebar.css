@@ -1,0 +1,84 @@
+.sidebar {
+  background-color: rgba(23, 23, 23, 0.5);
+  z-index: 10;
+}
+
+.sidebar-navigation {
+  height: 100%;
+}
+
+.sidebar-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.sidebar-link {
+  position: relative;
+}
+
+.sidebar-link > span {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.125rem;
+  background-color: #c40000;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .sidebar {
+    padding: 1em;
+  }
+
+  .soon {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.15rem;
+    right: -5px;
+  }
+
+  .brand-logo > img {
+    width: 3.0625em;
+    height: 3.0625em;
+  }
+
+  .sidebar-navigation {
+    margin-top: 2em;
+  }
+
+  .sidebar-link {
+    margin-bottom: 2.7em;
+  }
+
+  .sidebar-link > img {
+    margin-bottom: 0.4em;
+  }
+
+  .sidebar-link > img,
+  .logout-link > img {
+    width: 1.8em;
+    height: 1.8em;
+  }
+
+  .sidebar-link > span {
+    font-size: 0.7em;
+  }
+
+  .logout {
+    margin-bottom: 5.25em;
+  }
+
+  .scroll-up-button > img {
+    width: 2.85em;
+    height: 2.85em;
+  }
+}

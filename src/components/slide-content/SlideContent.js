@@ -7,7 +7,7 @@ import MovieCard from "../movie-card/MovieCard";
 
 function SlideContent({ name, data, filter }) {
   return (
-    <div className="slide-content">
+    <section className="slide-content">
       <div className="slide-content-header">
         <div>
           <h1>
@@ -40,7 +40,7 @@ function SlideContent({ name, data, filter }) {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }
 
