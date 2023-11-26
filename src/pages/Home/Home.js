@@ -7,10 +7,30 @@ function Home() {
   return (
     <div className="home">
       <MainSlider />
-      <SlideContent name="ფილმები" data={MovieData} filter={false} />
-      <SlideContent name="სერიალები" data={MovieData} filter={true} />
-      <SlideContent name="ფილმები" data={MovieData} filter={false} />
-      <SlideContent name="სერიალები" data={MovieData} filter={true} />
+      <SlideContent
+        name="ფილმები"
+        data={MovieData}
+        filter={false}
+        christmas={false}
+      />
+      <SlideContent
+        name="საახალწლო ფილმები"
+        data={MovieData}
+        filter={false}
+        christmas={true}
+      />
+      <SlideContent
+        name="სერიალები"
+        data={MovieData}
+        filter={true}
+        christmas={false}
+      />
+      <SlideContent
+        name="ფილმები"
+        data={MovieData}
+        filter={false}
+        christmas={false}
+      />
     </div>
   );
 }

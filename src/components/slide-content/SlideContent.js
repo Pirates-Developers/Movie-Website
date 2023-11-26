@@ -1,11 +1,22 @@
 import "./slide-content.css";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import MovieCard from "../movie-card/MovieCard";
 
+const filterCategories = ["დღის", "კვირის", "წლის"];
+
 function SlideContent({ name, data, filter }) {
+  const [filterMovies, setFilterMovies] = useState(
+    filter ? filterCategories[0] : null
+  );
+
+  const onFilter = (category) => {
+    setFilterMovies(category);
+  };
+
   return (
     <section className="slide-content">
       <div className="slide-content-header">
@@ -16,14 +27,21 @@ function SlideContent({ name, data, filter }) {
             {name}
           </h1>
           {filter ? (
-            <ul className="slide-content-filter">
-              <li>დღის</li>
-              <li>კვირის</li>
-              <li>წლის</li>
+            <ul className="slide-content-filter d-flex justify-content-between">
+              {filterCategories.map((filterCategory) => (
+                <li
+                  className={`${
+                    filterCategory === filterMovies ? "slide-filter-active" : ""
+                  }`}
+                  onClick={() => onFilter(filterCategory)}
+                >
+                  <div className="slide-filter-category">{filterCategory}</div>
+                  <div className="slide-filter-border"></div>
+                </li>
+              ))}
             </ul>
           ) : null}
         </div>
-        <div className="border" />
       </div>
       <div className="slider">
         <Swiper
