@@ -34,6 +34,7 @@ function SlideContent({ name, data, filter }) {
                     filterCategory === filterMovies ? "slide-filter-active" : ""
                   }`}
                   onClick={() => onFilter(filterCategory)}
+                  key={filterCategory}
                 >
                   <div className="slide-filter-category">{filterCategory}</div>
                   <div className="slide-filter-border"></div>
