@@ -45,9 +45,12 @@
   width: 100%;
 }
 
-.movie-slider-title > h1,
+.movie-slider-title > h1 {
+  line-height: 1.2em;
+}
+
 .movie-slider-description > p {
-  line-height: normal;
+  line-height: 1.7em;
 }
 
 .movie-slider-title,
@@ -60,7 +63,7 @@
 .movie-slider-play-button > span:first-of-type,
 .movie-search-bar {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .movie-slider-title > h1,
@@ -161,7 +164,7 @@
   color: #fff;
   border: none;
   text-align: center;
-  background-color: rgba(222, 222, 222, 0.171);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: FontAwesome, var(--firago);
   z-index: 10;
 }

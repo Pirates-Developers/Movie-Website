@@ -15,6 +15,21 @@
   position: relative;
 }
 
+.sidebar-link > span,
+.sidebar-link > svg path {
+  transition: 0.3s ease;
+}
+
+.sidebar-link.active > span,
+.sidebar-link:hover > span {
+  color: var(--blue);
+}
+
+.sidebar-link.active > svg path,
+.sidebar-link:hover > svg path {
+  fill: var(--blue);
+}
+
 .sidebar-link > span {
   color: var(--white);
   font-style: normal;
@@ -41,7 +56,7 @@
   }
 
   .soon {
-    font-size: 0.6rem;
+    font-size: 0.5em;
     padding: 0.1rem 0.15rem;
     right: -5px;
   }
@@ -52,33 +67,21 @@
   }
 
   .sidebar-navigation {
-    margin-top: 2em;
+    margin-top: 5.5em;
+    padding-bottom: 1em;
   }
 
   .sidebar-link {
     margin-bottom: 2.7em;
   }
 
-  .sidebar-link > img {
+  .sidebar-link > svg {
     margin-bottom: 0.4em;
-  }
-
-  .sidebar-link > img,
-  .logout-link > img {
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.6em;
+    height: 1.6em;
   }
 
   .sidebar-link > span {
     font-size: 0.7em;
-  }
-
-  .logout {
-    margin-bottom: 5.25em;
-  }
-
-  .scroll-up-button > img {
-    width: 2.85em;
-    height: 2.85em;
   }
 }

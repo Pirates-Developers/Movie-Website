@@ -8,6 +8,12 @@
   font-style: normal;
   font-weight: 600;
   color: #e7e7e7;
+  transition: 0.3s ease;
+}
+
+.header-link.active,
+.header-link:hover {
+  color: var(--blue);
 }
 
 .header-link:last-of-type {

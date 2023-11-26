@@ -4,6 +4,7 @@ import "./footer.css";
 function Footer() {
   return (
     <footer className="footer d-flex flex-column align-items-center">
+      <div className="footer-border"></div>
       <div className="footer-brand-logo d-flex justify-content-center align-items-center">
         <img src="/Logo.svg" alt="brand-logo" />
       </div>
