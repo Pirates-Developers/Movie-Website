@@ -24,7 +24,11 @@ function SlideContent({ name, data, filter, christmas, sponsor }) {
         <div>
           <h1>
             <img
-              src="/assets/icons/header-slide-icon/video-play.svg"
+              src={`${
+                christmas
+                  ? "/assets/icons/header-slide-icon/christmas.svg"
+                  : "/assets/icons/header-slide-icon/video-play.svg"
+              }`}
               alt="video-play-icon"
             />
             &nbsp;&nbsp;

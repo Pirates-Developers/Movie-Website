@@ -12,6 +12,7 @@ function Home() {
         data={MovieData}
         filter={false}
         christmas={false}
+        sponsor={false}
       />
       <SlideContent
         name="საახალწლო ფილმები"
@@ -25,12 +26,14 @@ function Home() {
         data={MovieData}
         filter={true}
         christmas={false}
+        sponsor={false}
       />
       <SlideContent
         name="ფილმები"
         data={MovieData}
         filter={false}
         christmas={false}
+        sponsor={false}
       />
     </div>
   );

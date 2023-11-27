@@ -1,7 +1,9 @@
 /* christmas-hat and sponsor-img */
 .christmas-hat-div {
   position: absolute;
-}.christmas-hat {
+}
+
+.christmas-hat {
   margin-left: 353px;
   margin-bottom: 40px;
 }
@@ -9,13 +11,13 @@
 .sponsor-image-container {
   margin-top: 110px;
   margin-bottom: 110px;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}.sponsor-image-container img {
+}
+
+.sponsor-image-container img {
   border-radius: 10px;
   width: 100%;
 }
-/* xd */
+
 .slide-content-header {
   display: flex;
   flex-direction: column;

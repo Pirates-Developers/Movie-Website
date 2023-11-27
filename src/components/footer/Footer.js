@@ -13,25 +13,26 @@ function Footer() {
           <Link to="/" className="footer-link">
             მთავარი
           </Link>
-          <Link to="/" className="footer-link">
+          <Link to="/movies" className="footer-link">
             ფილმები
           </Link>
-          <Link to="/" className="footer-link">
+          <Link to="/tvshows" className="footer-link">
             სერიალები
           </Link>
-          <Link to="/" className="footer-link">
+          <Link to="/animes" className="footer-link">
             ანიმე/ანიმაციები
           </Link>
-          <Link to="/" className="footer-link">
+          <Link to="/aboutus" className="footer-link">
             ჩვენ შესახებ
           </Link>
-          <Link to="/" className="footer-link">
+          <Link to="/contact" className="footer-link">
             კონტაქტი
           </Link>
         </div>
         <div className="footer-social-links d-flex align-items-center justify-content-center">
           <Link
-            to="/"
+            to="https://web.telegram.org/a/#-1001801382759"
+            target="_blank"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
             <img
@@ -40,7 +41,8 @@ function Footer() {
             />
           </Link>
           <Link
-            to="/"
+            to="https://twitter.com/"
+            target="_blank"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
             <img
@@ -49,7 +51,8 @@ function Footer() {
             />
           </Link>
           <Link
-            to="/"
+            to="https://mail.google.com/mail/u/0/#inbox"
+            target="_blank"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
             <img src="/assets/images/footer-img/Gmail.png" alt="gmail-icon" />
