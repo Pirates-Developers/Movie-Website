@@ -5,10 +5,11 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import MovieCard from "../movie-card/MovieCard";
+import christmasHat from "./images/christmas-hat.png";
+import sponsorImg from "./images/sponsor.png";
 
 const filterCategories = ["დღის", "კვირის", "წლის"];
-
-function SlideContent({ name, data, filter }) {
+function SlideContent({ name, data, filter, christmas, sponsor }) {
   const [filterMovies, setFilterMovies] = useState(
     filter ? filterCategories[0] : null
   );
@@ -22,9 +23,21 @@ function SlideContent({ name, data, filter }) {
       <div className="slide-content-header">
         <div>
           <h1>
-            <img src="/assets/icons/video-play.svg" alt="video-play-icon" />
+            <img
+              src="/assets/icons/header-slide-icon/video-play.svg"
+              alt="video-play-icon"
+            />
             &nbsp;&nbsp;
             {name}
+            {christmas && (
+              <div className="christmas-hat-div">
+                <img
+                  className="christmas-hat"
+                  src={christmasHat}
+                  alt="Christmas Hat"
+                />
+              </div>
+            )}
           </h1>
           {filter ? (
             <ul className="slide-content-filter d-flex justify-content-between">
@@ -59,6 +72,11 @@ function SlideContent({ name, data, filter }) {
           ))}
         </Swiper>
       </div>
+      {sponsor && (
+        <div className="sponsor-image-container">
+          <img src={sponsorImg} alt="Sponsor" />
+        </div>
+      )}
     </section>
   );
 }

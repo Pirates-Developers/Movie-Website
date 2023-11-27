@@ -6,16 +6,16 @@ function Header() {
     <header className="header d-flex justify-content-end">
       <div className="header-navigation">
         <div className="header-links">
-          <NavLink to="/movies" className="header-link">
+          <NavLink to="/non-existing-movies" className="header-link">
             ფილმები
           </NavLink>
-          <NavLink to="/tvshows" className="header-link">
+          <NavLink to="/non-existing-tvshows" className="header-link">
             სერიალები
           </NavLink>
-          <NavLink to="/animes" className="header-link">
+          <NavLink to="/non-existing-animes" className="header-link">
             ანიმე
           </NavLink>
-          <NavLink to="/books" className="header-link">
+          <NavLink to="/non-existing-books" className="header-link">
             წიგნები
           </NavLink>
         </div>

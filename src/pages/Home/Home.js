@@ -18,6 +18,7 @@ function Home() {
         data={MovieData}
         filter={false}
         christmas={true}
+        sponsor={true}
       />
       <SlideContent
         name="სერიალები"

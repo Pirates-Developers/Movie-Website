@@ -13,7 +13,7 @@ function MovieCard({ data }) {
       />
       <div className="movie-card-top">
         <img
-          src="/assets/icons/movie-card-play.svg"
+          src="/assets/icons/header-slide-icon/movie-card-play.svg"
           alt="movie-card-play-icon"
         />
       </div>

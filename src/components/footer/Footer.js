@@ -34,19 +34,25 @@ function Footer() {
             to="/"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
-            <img src="/assets/icons/Telegram.png" alt="telegram-icon" />
+            <img
+              src="/assets/images/footer-img/Telegram.png"
+              alt="telegram-icon"
+            />
           </Link>
           <Link
             to="/"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
-            <img src="/assets/icons/Twitter.png" alt="twitter-icon" />
+            <img
+              src="/assets/images/footer-img/Twitter.png"
+              alt="twitter-icon"
+            />
           </Link>
           <Link
             to="/"
             className="footer-social-link d-flex justify-content-center align-items-center"
           >
-            <img src="/assets/icons/Gmail.png" alt="gmail-icon" />
+            <img src="/assets/images/footer-img/Gmail.png" alt="gmail-icon" />
           </Link>
         </div>
         <div className="copyright text-center">© Copyright 2022 - BSP</div>

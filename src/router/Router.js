@@ -3,6 +3,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import ErrorPage from "../components/404page/ErrorPage";
 // Layout
 import RootLayout from "../layouts/root-layout/RootLayout";
 // Pages
@@ -13,6 +14,8 @@ export const router = createBrowserRouter(
     <>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
+        {/* other routes */}
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     </>
   )

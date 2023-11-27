@@ -29,7 +29,7 @@ function MainSlider() {
           <div className="movie-slider-img">
             <div className="movie-slider-img-overlay"></div>
             <LazyLoadImage
-              src="/assets/images/img1.jpg"
+              src="/assets/images/header-slide-img/img1.jpg"
               alt="movie-slider-img"
               effect="blur"
             />
@@ -49,19 +49,28 @@ function MainSlider() {
             </div>
             <div className="movie-slider-others d-flex align-items-center">
               <div className="movie-slider-rating d-flex align-items-center">
-                <img src="/assets/icons/imdb.svg" alt="imdb-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/imdb.svg"
+                  alt="imdb-icon"
+                />
                 <span>9.8</span>
               </div>
               <div className="movie-slider-trailer d-flex align-items-center">
                 <span>თრეილერი</span>
-                <img src="/assets/icons/play.svg" alt="play-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/play.svg"
+                  alt="play-icon"
+                />
               </div>
             </div>
             <button className="movie-slider-play-button d-flex align-items-center">
               <span>ნახვა</span>
               <span>
                 <span>
-                  <img src="/assets/icons/play.svg" alt="play-icon" />
+                  <img
+                    src="/assets/icons/header-slide-icon/play.svg"
+                    alt="play-icon"
+                  />
                 </span>
               </span>
             </button>
@@ -71,7 +80,7 @@ function MainSlider() {
           <div className="movie-slider-img">
             <div className="movie-slider-img-overlay"></div>
             <LazyLoadImage
-              src="/assets/images/img2.jpg"
+              src="/assets/images/header-slide-img/img2.jpg"
               alt="movie-slider-img"
               effect="blur"
             />
@@ -89,19 +98,28 @@ function MainSlider() {
             </div>
             <div className="movie-slider-others d-flex align-items-center">
               <div className="movie-slider-rating d-flex align-items-center">
-                <img src="/assets/icons/imdb.svg" alt="imdb-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/imdb.svg"
+                  alt="imdb-icon"
+                />
                 <span>9.8</span>
               </div>
               <div className="movie-slider-trailer d-flex align-items-center">
                 <span>თრეილერი</span>
-                <img src="/assets/icons/play.svg" alt="play-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/play.svg"
+                  alt="play-icon"
+                />
               </div>
             </div>
             <button className="movie-slider-play-button d-flex align-items-center">
               <span>ნახვა</span>
               <span>
                 <span>
-                  <img src="/assets/icons/play.svg" alt="play-icon" />
+                  <img
+                    src="/assets/icons/header-slide-icon/play.svg"
+                    alt="play-icon"
+                  />
                 </span>
               </span>
             </button>
@@ -111,7 +129,7 @@ function MainSlider() {
           <div className="movie-slider-img">
             <div className="movie-slider-img-overlay"></div>
             <LazyLoadImage
-              src="/assets/images/img3.jpg"
+              src="/assets/images/header-slide-img/img3.jpg"
               alt="movie-slider-img"
               effect="blur"
             />
@@ -129,19 +147,28 @@ function MainSlider() {
             </div>
             <div className="movie-slider-others d-flex align-items-center">
               <div className="movie-slider-rating d-flex align-items-center">
-                <img src="/assets/icons/imdb.svg" alt="imdb-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/imdb.svg"
+                  alt="imdb-icon"
+                />
                 <span>9.8</span>
               </div>
               <div className="movie-slider-trailer d-flex align-items-center">
                 <span>თრეილერი</span>
-                <img src="/assets/icons/play.svg" alt="play-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/play.svg"
+                  alt="play-icon"
+                />
               </div>
             </div>
             <button className="movie-slider-play-button d-flex align-items-center">
               <span>ნახვა</span>
               <span>
                 <span>
-                  <img src="/assets/icons/play.svg" alt="play-icon" />
+                  <img
+                    src="/assets/icons/header-slide-icon/play.svg"
+                    alt="play-icon"
+                  />
                 </span>
               </span>
             </button>
@@ -151,7 +178,7 @@ function MainSlider() {
           <div className="movie-slider-img">
             <div className="movie-slider-img-overlay"></div>
             <LazyLoadImage
-              src="/assets/images/img4.jpg"
+              src="/assets/images/header-slide-img/img4.jpg"
               alt="movie-slider-img"
               effect="blur"
             />
@@ -169,19 +196,28 @@ function MainSlider() {
             </div>
             <div className="movie-slider-others d-flex align-items-center">
               <div className="movie-slider-rating d-flex align-items-center">
-                <img src="/assets/icons/imdb.svg" alt="imdb-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/imdb.svg"
+                  alt="imdb-icon"
+                />
                 <span>9.8</span>
               </div>
               <div className="movie-slider-trailer d-flex align-items-center">
                 <span>თრეილერი</span>
-                <img src="/assets/icons/play.svg" alt="play-icon" />
+                <img
+                  src="/assets/icons/header-slide-icon/play.svg"
+                  alt="play-icon"
+                />
               </div>
             </div>
             <button className="movie-slider-play-button d-flex align-items-center">
               <span>ნახვა</span>
               <span>
                 <span>
-                  <img src="/assets/icons/play.svg" alt="play-icon" />
+                  <img
+                    src="/assets/icons/header-slide-icon/play.svg"
+                    alt="play-icon"
+                  />
                 </span>
               </span>
             </button>
