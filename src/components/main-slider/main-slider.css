@@ -158,7 +158,7 @@
 
 .movie-search-bar {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   color: #fff;
@@ -177,6 +177,35 @@
   color: rgba(231, 231, 231, 0.815);
   font-style: normal;
   font-weight: 400;
+}
+
+.movie-searched-items {
+  position: absolute;
+  top: 77.812px;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+  opacity: 0;
+  overflow: auto;
+  cursor: default;
+  z-index: -1;
+  transition: 0.1s linear;
+}
+
+.movie-searched-items.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.movie-searched-data {
+  height: fit-content;
+}
+
+.movie-searched-items img {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* Desktop */
@@ -283,5 +312,18 @@
     height: 3.875em;
     padding: 0.875em 0;
     font-size: 1.25em;
+  }
+
+  .movie-searched-items {
+    height: 40.1em;
+  }
+
+  .movie-searched-data > .search-item-card {
+    margin: 1.5em;
+  }
+
+  .movie-searched-items > img {
+    width: 2rem;
+    height: 2rem;
   }
 }

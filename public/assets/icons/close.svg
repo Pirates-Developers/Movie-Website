@@ -1,0 +1,14 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="12.1409" y1="12.608" x2="32.6469" y2="33.1141" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<line x1="12.1409" y1="12.608" x2="32.6469" y2="33.1141" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<line x1="12.1409" y1="12.608" x2="32.6469" y2="33.1141" stroke="url(#paint0_linear_132_841)" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<line x1="12.6201" y1="33.1261" x2="33.1262" y2="12.62" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<line x1="12.6201" y1="33.1261" x2="33.1262" y2="12.62" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<line x1="12.6201" y1="33.1261" x2="33.1262" y2="12.62" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_132_841" x1="21.3332" y1="23.9217" x2="20.6261" y2="24.6288" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.43"/>
+<stop offset="1" stop-color="#12B5FB" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

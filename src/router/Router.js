@@ -3,11 +3,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import ErrorPage from "../components/404page/ErrorPage";
 // Layout
 import RootLayout from "../layouts/root-layout/RootLayout";
 // Pages
 import Home from "../pages/Home/Home";
+import ErrorPage from "../components/404page/ErrorPage";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

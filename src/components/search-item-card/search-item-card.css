@@ -1,0 +1,45 @@
+/* Desktop */
+.search-item-card .lazy-load-image-background,
+.search-item-card .lazy-load-image-background > .search-item-img {
+  border-radius: 0.625rem;
+}
+
+.search-item-card .lazy-load-image-background > .search-item-img {
+  object-fit: cover;
+}
+
+.search-item-body > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.search-item-body > title,
+.search-item-body > .year {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.search-item-body > .year {
+  color: #ababab;
+}
+
+@media only screen and (width >= 1024px) {
+  .search-item-card .lazy-load-image-background,
+  .search-item-card .lazy-load-image-background > .search-item-img {
+    width: 18.75em;
+    height: 22.5em;
+  }
+
+  .search-item-body {
+    margin-top: 1.35em;
+  }
+
+  .search-item-body > title {
+    font-size: 1.375em;
+  }
+
+  .search-item-body > .year {
+    font-size: 1.125em;
+    margin-top: 0.88em;
+  }
+}

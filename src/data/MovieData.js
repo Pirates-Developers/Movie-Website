@@ -49,7 +49,7 @@ export const MovieData = [
   },
 ];
 
-const movies = [
+export const movies = [
   {
     name: "Stars Beyond Reach2",
     imdb: 8.3,

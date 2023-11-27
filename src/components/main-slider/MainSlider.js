@@ -3,13 +3,38 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { movies } from "../../data/MovieData";
+import SearchItemCard from "../search-item-card/SearchItemCard";
+
+const mainLayout = document.querySelector(".root-layout > .main-content");
 
 function MainSlider() {
   const [search, setSearch] = useState("");
+  const [searched, setSearched] = useState(false);
+
+  const onSearch = (e) => {
+    const searchVal = e.target.value;
+    setSearch(searchVal);
+    if (searchVal.length > 0) {
+      setSearched(true);
+    } else {
+      setSearched(false);
+    }
+  };
+
+  useEffect(() => {
+    if (mainLayout) {
+      if (searched) {
+        mainLayout.style.overflow = "hidden";
+      } else {
+        mainLayout.style.overflow = "auto";
+      }
+    }
+  }, [searched]);
 
   return (
     <section className="main-slider">
@@ -223,11 +248,23 @@ function MainSlider() {
             </button>
           </div>
         </SwiperSlide>
+        <div className={`movie-searched-items ${searched ? "active" : ""}`}>
+          <div className="movie-searched-data d-flex flex-wrap justify-content-center">
+            {movies.map((movie, index) => (
+              <SearchItemCard key={index} data={movie} />
+            ))}
+          </div>
+          <img
+            src="/assets/icons/close.svg"
+            alt="close-icon"
+            onClick={() => setSearched(false)}
+          />
+        </div>
         <input
           className="movie-search-bar"
           type="text"
           placeholder="ძებნა &#61442;"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={onSearch}
           value={search}
         />
       </Swiper>
