@@ -10,7 +10,7 @@ export default function Films() {
         <div className="film-div">
           ფილმები
           <img
-            src="./assets/images/header>films-img/video-play.png"
+            src="./assets/images/header-films-img/video-play.png"
             alt="film-icon"
           />
         </div>

@@ -8,7 +8,7 @@ export default function FilterBoxes() {
           <h3>ჟანრი</h3>
           <div className="bottom-arrow">
             <img
-              src="./assets/images/header>films-img/Vector.png"
+              src="./assets/images/header-films-img/Vector.png"
               alt="arrow-icon"
             />
           </div>
@@ -20,7 +20,7 @@ export default function FilterBoxes() {
           <h3>ენა</h3>
           <div className="bottom-arrow">
             <img
-              src="./assets/images/header>films-img/Vector.png"
+              src="./assets/images/header-films-img/Vector.png"
               alt="arrow-icon"
             />
           </div>
@@ -32,7 +32,7 @@ export default function FilterBoxes() {
           <h3>წელი</h3>
           <div className="bottom-arrow">
             <img
-              src="./assets/images/header>films-img/Vector.png"
+              src="./assets/images/header-films-img/Vector.png"
               alt="arrow-icon"
             />
           </div>
@@ -44,7 +44,7 @@ export default function FilterBoxes() {
           <h3>რეიტინგი</h3>
           <div className="bottom-arrow">
             <img
-              src="./assets/images/header>films-img/Vector.png"
+              src="./assets/images/header-films-img/Vector.png"
               alt="arrow-icon"
             />
           </div>
@@ -56,7 +56,7 @@ export default function FilterBoxes() {
           <h3>ქვეყანა</h3>
           <div className="bottom-arrow">
             <img
-              src="./assets/images/header>films-img/Vector.png"
+              src="./assets/images/header-films-img/Vector.png"
               alt="arrow-icon"
             />
           </div>
