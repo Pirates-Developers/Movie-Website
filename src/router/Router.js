@@ -5,10 +5,12 @@ import {
 } from "react-router-dom";
 import ErrorPage from "../components/404page/ErrorPage";
 import Films from "../components/header/films/Films";
+
 // Layout
 import RootLayout from "../layouts/root-layout/RootLayout";
 // Pages
 import Home from "../pages/Home/Home";
+import ErrorPage from "../components/404page/ErrorPage";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
