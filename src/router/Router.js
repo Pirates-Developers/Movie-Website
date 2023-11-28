@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import ErrorPage from "../components/404page/ErrorPage";
-import Films from "../components/header/films/Films";
+import Films from "../pages/Films/Films";
 
 // Layout
 import RootLayout from "../layouts/root-layout/RootLayout";

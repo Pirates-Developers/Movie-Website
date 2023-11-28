@@ -1,7 +1,7 @@
 import "./filmebi.css";
-import SearchBox from "../../searchbox/SearchBox";
-import FilterBoxes from "../../FilterBoxes/FilterBoxes";
-import { FilmsData } from "./FilmsData";
+import SearchBox from "../../components/searchbox/SearchBox";
+import FilterBoxes from "../../components/FilterBoxes/FilterBoxes";
+import { FilmsData } from "../../data/FilmsData";
 
 export default function Films() {
   return (

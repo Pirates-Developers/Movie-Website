@@ -6,7 +6,7 @@
 .film-div {
   display: flex;
   font-size: 36px;
-  color: #E7E7E7;
+  color: #e7e7e7;
   justify-content: flex-start;
   align-items: center;
   gap: 18px;
@@ -17,8 +17,8 @@
   text-align: center;
   outline: none;
   height: 62px;
-  background: #DEDEDE26;
-  color: #E7E7E7B2;
+  background: #dedede26;
+  color: #e7e7e7b2;
   width: 100%;
   font-family: FontAwesome, var(--firago);
 }
@@ -41,7 +41,8 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 74px;
-}.film img {
+}
+.film img {
   width: 344px;
   height: 459px;
   object-fit: cover;
@@ -53,8 +54,12 @@
   height: 90px;
   position: absolute;
   bottom: 0;
-  background-color: black;
-  opacity: 80%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  backdrop-filter: blur(9px);
   padding: 10px;
 }
 
@@ -66,23 +71,25 @@
 }
 
 /* font sizes & color & positions */
-.h1{
+.h1 {
   margin-top: 9px;
   margin-left: 15px;
   font-size: 24px;
-  color: #FFFFFF;
-}.h2{
+  color: #ffffff;
+}
+.h2 {
   font-size: 18px;
-  color: #FFFFFF99;
+  color: #ffffff99;
   margin-left: 15px;
 }
-.p1{
+.p1 {
   margin-top: 9px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 39px;
-}.p2{
+}
+.p2 {
   margin-right: 28px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
