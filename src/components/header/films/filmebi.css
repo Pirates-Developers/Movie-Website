@@ -1,0 +1,88 @@
+.film-search-filter-div {
+  margin-top: 27px;
+  margin-left: 62px;
+  margin-right: 78px;
+}
+.film-div {
+  display: flex;
+  font-size: 36px;
+  color: #E7E7E7;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 49px;
+}
+
+.search-input {
+  text-align: center;
+  outline: none;
+  height: 62px;
+  background: #DEDEDE26;
+  color: #E7E7E7B2;
+  width: 100%;
+  font-family: FontAwesome, var(--firago);
+}
+/* ფილმები */
+.films-main {
+  padding: 0;
+}
+.film-container {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+  padding: 0px 210px 0px 152px;
+}
+
+.film {
+  position: relative;
+  gap: 28px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 74px;
+}.film img {
+  width: 344px;
+  height: 459px;
+  object-fit: cover;
+}
+/* Text box */
+.image-texts {
+  color: red;
+  width: 344px;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  opacity: 80%;
+  padding: 10px;
+}
+
+.satauri-rating,
+.title-imdb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* font sizes & color & positions */
+.h1{
+  margin-top: 9px;
+  margin-left: 15px;
+  font-size: 24px;
+  color: #FFFFFF;
+}.h2{
+  font-size: 18px;
+  color: #FFFFFF99;
+  margin-left: 15px;
+}
+.p1{
+  margin-top: 9px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-right: 39px;
+}.p2{
+  margin-right: 28px;
+  font-size: 18px;
+  color: #FFFFFF;
+}

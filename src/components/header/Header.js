@@ -6,7 +6,7 @@ function Header() {
     <header className="header d-flex justify-content-end">
       <div className="header-navigation">
         <div className="header-links">
-          <NavLink to="/non-existing-movies" className="header-link">
+          <NavLink to="/films" className="header-link">
             ფილმები
           </NavLink>
           <NavLink to="/non-existing-tvshows" className="header-link">
