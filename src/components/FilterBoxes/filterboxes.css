@@ -1,0 +1,21 @@
+.formm {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+}
+.filter-radius {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  width: 314px;
+  height: 71px;
+  font-size: 24px;
+}.filter-box {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
