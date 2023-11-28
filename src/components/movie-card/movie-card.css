@@ -3,9 +3,27 @@
   position: relative;
 }
 
+.movie-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  z-index: 2;
+}
+
 .movie-card:hover .movie-card-top,
-.movie-card:hover .movie-card-body {
+.movie-card:hover .movie-card-body,
+.movie-card:hover .movie-card-overlay {
   opacity: 1;
+}
+
+.movie-card-overlay,
+.movie-card-top,
+.movie-card-body {
+  transition: 0.3s ease;
 }
 
 .movie-card .lazy-load-image-background,
@@ -23,7 +41,7 @@
 .movie-card-body {
   position: absolute;
   opacity: 0;
-  transition: 0.3s ease;
+  z-index: 3;
 }
 
 .movie-card-top {
