@@ -10,9 +10,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { movies } from "../../data/MovieData";
 import SearchItemCard from "../search-item-card/SearchItemCard";
 
-const mainLayout = document.querySelector(".root-layout > .main-content");
-
 function MainSlider() {
+  const mainLayout = document.querySelector(".root-layout > .main-content");
   const [search, setSearch] = useState("");
   const [searched, setSearched] = useState(false);
 
@@ -34,7 +33,7 @@ function MainSlider() {
         mainLayout.style.overflow = "auto";
       }
     }
-  }, [searched]);
+  }, [searched, mainLayout]);
 
   return (
     <section className="main-slider">
