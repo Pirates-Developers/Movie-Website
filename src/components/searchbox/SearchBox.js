@@ -20,7 +20,7 @@ function SearchBox() {
         className="search-input"
         id="search"
         type="search"
-        placeholder="ძებნა &#61442;"
+        placeholder="ძებნა &nbsp; &#61442;"
         autoFocus
         required
         value={searchTerm}
