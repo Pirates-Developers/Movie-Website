@@ -143,6 +143,9 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  .search-div {
+    display: none;
+  }
   .free-banner {
     display: none;
   }
