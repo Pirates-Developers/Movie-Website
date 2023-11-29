@@ -3,6 +3,7 @@ import { useState } from "react";
 import GenreBox from "./genreBox/GenreBox";
 import LanguageBox from "./languageBox/LanguageBox";
 import CountryBox from "./countryBox/CountryBox";
+import RatingBox from "./ratingBox/RatingBox";
 
 export default function FilterBoxes() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -38,17 +39,7 @@ export default function FilterBoxes() {
         </div>
       </div>
       <></>
-      <div className="filter-radius">
-        <div className="filter-box">
-          <h3>რეიტინგი</h3>
-          <div className="bottom-arrow">
-            <img
-              src="./assets/images/header-films-img/Vector.png"
-              alt="arrow-icon"
-            />
-          </div>
-        </div>
-      </div>
+      <RatingBox />
       <></>
       <CountryBox
         isOpen={openDropdown === "country"}
