@@ -21,6 +21,11 @@ export default function Films() {
         <div className="film-container">
           {FilmsData.Data.map((film) => (
             <div key={film.id} className="film">
+              <img
+                src="./assets/images/PLAY.png"
+                alt="PLAY-icon"
+                className="PLAY-img"
+              />
               <img src={film.img} alt={film.img} />
               <div className="image-texts">
                 <div className="satauri-rating">

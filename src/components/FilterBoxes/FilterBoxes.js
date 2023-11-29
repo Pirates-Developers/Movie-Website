@@ -39,7 +39,10 @@ export default function FilterBoxes() {
         </div>
       </div>
       <></>
-      <RatingBox />
+      <RatingBox
+        isOpen={openDropdown === "rating"}
+        toggleDropdown={() => handleToggleDropdown("rating")}
+      />
       <></>
       <CountryBox
         isOpen={openDropdown === "country"}
