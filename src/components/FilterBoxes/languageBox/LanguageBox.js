@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./languageBox.css";
 
-function LanguageSelector() {
-  const [isOpen, setIsOpen] = useState(false);
+function LanguageSelector({ isOpen, toggleDropdown }) {
   const [selectedLanguages, setSelectedLanguages] = useState([]);
 
   const languages = ["ქართული", "ინგლისური", "რუსული"];
-
-  const toggleDropdown = () => setIsOpen(!isOpen);
 
   const handleLanguageSelection = (language) => {
     if (selectedLanguages.includes(language)) {

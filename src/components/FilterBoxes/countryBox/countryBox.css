@@ -1,0 +1,33 @@
+.country-dropdown {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: black;
+  color: #FFFFFF;
+  border-radius: 5px;
+  height: 445px;
+}.country-dropdown::-webkit-scrollbar {
+  width: 13px;
+  height: 56px;
+}
+
+.country-dropdown::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.country-dropdown::-webkit-scrollbar-thumb {
+  background: linear-gradient(110deg,
+      rgba(140, 22, 159, 0.95) 0%,
+      rgba(154, 52, 208, 0.95) 47.36%,
+      rgba(92, 97, 217, 0.95) 100.12%,
+      rgba(18, 181, 251, 0.95) 108.51%,
+      rgba(18, 181, 251, 0.95) 108.51%);
+  border-radius: 10px;
+}
+
+.country-option {
+  flex: 0 0 calc(100% / 20);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
