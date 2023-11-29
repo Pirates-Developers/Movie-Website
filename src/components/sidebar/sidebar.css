@@ -84,6 +84,98 @@
   .sidebar-link > span {
     font-size: 0.7em;
   }
+
+  /* Above 2100px */
+  @media only screen and (width >= 2100px) {
+    .sidebar {
+      padding: 1em 1.2em;
+    }
+
+    .soon {
+      font-size: 0.6em;
+      padding: 0.15rem 0.2rem;
+      right: -9px;
+    }
+
+    .brand-logo > img {
+      width: 3.5em;
+      height: 3.5em;
+    }
+
+    .sidebar-link > svg {
+      margin-bottom: 0.4em;
+      width: 2em;
+      height: 2em;
+    }
+
+    .sidebar-link > span {
+      font-size: 0.8em;
+    }
+  }
+
+  /* Below 1800px */
+  @media only screen and (width <= 1800px) {
+    .soon {
+      right: -8px;
+    }
+
+    .brand-logo > img {
+      width: 2.9em;
+      height: 2.9em;
+    }
+
+    .sidebar-navigation {
+      margin-top: 5em;
+    }
+
+    .sidebar-link {
+      margin-bottom: 2.5em;
+    }
+
+    .sidebar-link > svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    .sidebar-link > span {
+      font-size: 0.65em;
+    }
+  }
+
+  /* Below 1560px */
+  @media only screen and (width <= 1560px) {
+    .sidebar {
+      padding: 0.8em;
+    }
+
+    .brand-logo > img {
+      width: 2.75em;
+      height: 2.75em;
+    }
+
+    .sidebar-navigation {
+      margin-top: 5em;
+    }
+
+    .sidebar-link {
+      margin-bottom: 2.5em;
+    }
+
+    .sidebar-link > svg {
+      width: 1.45em;
+      height: 1.45em;
+      margin-bottom: 0.55em;
+    }
+
+    .sidebar-link > span {
+      font-size: 0.63em;
+    }
+  }
+
+    /* Below 1400px */
+    @media only screen and (width <= 1400px) {
+      
+    }
 }
 
 @media only screen and (max-width: 900px) {

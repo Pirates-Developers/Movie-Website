@@ -30,4 +30,33 @@
     font-size: 1.125em;
     margin-right: 4.2em;
   }
+
+  /* Above 2100px */
+  @media only screen and (width >= 2100px) {
+    .header {
+      padding: 2.2em 10em;
+    }
+
+    .header-link {
+      font-size: 1.4em;
+    }
+  }
+
+  /* Below 1800px */
+  @media only screen and (width <= 1800px) {
+    .header {
+      padding: 1.8em 9em;
+    }
+
+    .header-link {
+      font-size: 1.05em;
+    }
+  }
+
+  /* Below 1560px */
+  @media only screen and (width <= 1560px) {
+    .header-link {
+      font-size: 1em;
+    }
+  }
 }
