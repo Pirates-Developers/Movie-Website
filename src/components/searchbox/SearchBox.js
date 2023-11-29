@@ -15,7 +15,7 @@ function SearchBox() {
   };
 
   return (
-    <form onSubmit={handleSubmit} role="search" className="search-form">
+    <div onSubmit={handleSubmit} role="search" className="search-div">
       <input
         className="search-input"
         id="search"
@@ -26,7 +26,7 @@ function SearchBox() {
         value={searchTerm}
         onChange={handleChange}
       />
-    </form>
+    </div>
   );
 }
 
