@@ -1,8 +1,9 @@
 import "./filterboxes.css";
+import LanguageBox from "./languageBox/LanguageBox";
 
 export default function FilterBoxes() {
   return (
-    <form className="formm">
+    <div className="formm">
       <div className="filter-radius">
         <div className="filter-box">
           <h3>ჟანრი</h3>
@@ -15,17 +16,7 @@ export default function FilterBoxes() {
         </div>
       </div>
       <></>
-      <div className="filter-radius">
-        <div className="filter-box">
-          <h3>ენა</h3>
-          <div className="bottom-arrow">
-            <img
-              src="./assets/images/header-films-img/Vector.png"
-              alt="arrow-icon"
-            />
-          </div>
-        </div>
-      </div>
+      <LanguageBox />
       <></>
       <div className="filter-radius">
         <div className="filter-box">
@@ -63,6 +54,6 @@ export default function FilterBoxes() {
         </div>
       </div>
       <></>
-    </form>
+    </div>
   );
 }

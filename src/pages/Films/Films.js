@@ -5,7 +5,7 @@ import { FilmsData } from "../../data/FilmsData";
 
 export default function Films() {
   return (
-    <form>
+    <main>
       <div className="film-search-filter-div">
         <div className="film-div">
           ფილმები
@@ -44,6 +44,6 @@ export default function Films() {
           ))}
         </div>
       </>
-    </form>
+    </main>
   );
 }
