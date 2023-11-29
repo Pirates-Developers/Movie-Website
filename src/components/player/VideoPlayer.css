@@ -3,15 +3,108 @@
   width: 100%;
 }
 .plyr__control:hover {
-  background: #3e3e3e83 !important;
+  background: transparent !important;
 }
 .plyr__progress--played,
 .plyr__progress--played:hover,
 .plyr__progress--buffer,
 .plyr__progress--buffer:hover {
-  background: red !important; /* Change the progress bar color to red */
+  background: red !important;
 }
 .plyr__tooltip--seek {
   background: red !important;
-  cursor: pointer; /* Change the tooltip color to red */
+  cursor: pointer;
+}
+.plyr__controls {
+  background: linear-gradient(
+    357deg,
+    rgba(0, 0, 0, 0.8) -26.16%,
+    rgba(0, 0, 0, 0.8) 110.02%
+  ) !important;
+  /* background-color: red !important; */
+  height: 60px !important;
+  padding-bottom: 32px !important;
+}
+.plyr-badge-background {
+  color: #fff !important;
+  background-color: red !important;
+}
+
+.plyr--video .plyr__control--overlaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plyr__control--overlaid .plyr__control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plyr__menu__container {
+  background-color: #2a2a2a !important;
+  color: red !important;
+}
+/* .icon--pressed {
+  display: none !important;
+}
+.icon--not-pressed {
+  display: none !important;
+} */
+.plyr__progress {
+  position: absolute;
+  width: 100%;
+  top: -10px;
+}
+
+.plyr__progress__buffer {
+  background: rgba(255, 255, 255, 0.2);
+}
+.plyr input[type="range"]::-webkit-slider-thumb {
+  background-color: #fff !important; /* For Webkit browsers like Chrome and Safari */
+}
+
+.plyr input[type="range"]::-moz-range-thumb {
+  background-color: #fff !important; /* For Mozilla Firefox */
+}
+
+.plyr input[type="range"]::-ms-thumb {
+  background-color: #fff !important; /* For Internet Explorer/Edge */
+}
+[id^="plyr-volume-"] {
+  color: #00C2FF !important;
+}
+
+[id^="plyr-seek-"] {
+  color: #00C2FF !important;
+}
+.plyr__control--overlaid {
+  background-image: radial-gradient(circle 20px, #ffffff, #eeeeeef8);
+  color: #00C2FF;
+}
+.plyr__control {
+  background-color: transparent !important;
+}
+.plyr__control.plyr__control--forward {
+  color: #fff;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-weight: 400;
+}
+.plyr__control span {
+  color: #fff;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-weight: 400;
+}
+.plyr__control:hover {
+  background: #00C2FF !important
+}
+.plyr__control.plyr__control--forward:hover {
+  background: linear-gradient(90deg, #ff00b8 0%, #00c2ff 100%) !important;
+}
+
+.plyr__menu__container .plyr__control[role="menuitemradio"]:before {
+  background: linear-gradient(90deg, #ff00b8 0%, #00c2ff 100%) !important;
 }
