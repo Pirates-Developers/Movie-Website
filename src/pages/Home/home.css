@@ -1,0 +1,6 @@
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .home {
+    padding: 0 2.5em;
+  }
+}

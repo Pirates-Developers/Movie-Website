@@ -13,10 +13,3 @@
   overflow: auto;
   position: relative;
 }
-
-/* Desktop */
-@media only screen and (width >= 1024px) {
-  .root-layout > .main-content > div {
-    padding: 0 2.5em;
-  }
-}

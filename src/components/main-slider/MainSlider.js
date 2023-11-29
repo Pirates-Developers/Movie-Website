@@ -3,7 +3,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -11,7 +11,6 @@ import { movies } from "../../data/MovieData";
 import SearchItemCard from "../search-item-card/SearchItemCard";
 
 function MainSlider() {
-  const mainLayout = document.querySelector(".root-layout > .main-content");
   const [search, setSearch] = useState("");
   const [searched, setSearched] = useState(false);
 
@@ -25,18 +24,9 @@ function MainSlider() {
     }
   };
 
-  useEffect(() => {
-    if (mainLayout) {
-      if (searched) {
-        mainLayout.style.overflow = "hidden";
-      } else {
-        mainLayout.style.overflow = "auto";
-      }
-    }
-  }, [searched, mainLayout]);
-
   return (
     <section className="main-slider">
+      {/* Main Carousel  */}
       <Swiper
         effect={"fade"}
         modules={[Autoplay, Pagination, EffectFade]}
@@ -247,6 +237,7 @@ function MainSlider() {
             </button>
           </div>
         </SwiperSlide>
+        {/* Searched Items Container */}
         <div className={`movie-searched-items ${searched ? "active" : ""}`}>
           <div className="movie-searched-data d-flex flex-wrap justify-content-center">
             {movies.map((movie, index) => (
@@ -259,6 +250,7 @@ function MainSlider() {
             onClick={() => setSearched(false)}
           />
         </div>
+        {/* Search Input */}
         <input
           className="movie-search-bar"
           type="text"
