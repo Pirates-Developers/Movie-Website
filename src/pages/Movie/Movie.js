@@ -4,7 +4,7 @@ import { MovieData } from "../../data/MovieData";
 import SlideContent from "../../components/slide-content/SlideContent";
 import VideoPlayer from "../../components/player/VideoPlayer";
 
-export default function Films() {
+export default function Movie() {
   return (
     <div className="outer">
       <SearchBox />
@@ -15,13 +15,13 @@ export default function Films() {
         <div className="details-container-inner">
           <div className="image-triler">
             <img
-              src="./assets/images/slide-img/movie-img-2.png"
+              src="/assets/images/slide-img/movie-img-2.png"
               alt="film-icon"
               className="movie-image"
             />
             <div className="trailer-button">
               <img
-                src="./assets/icons/detailed-icons/playTrailer.svg"
+                src="/assets/icons/detailed-icons/playTrailer.svg"
                 alt="film-icon"
               />
               <p className="triler-text">თრილერი</p>
@@ -37,14 +37,14 @@ export default function Films() {
             <div className="detailed-right">
               <div className="imdb-container">
                 <img
-                  src="./assets/icons/detailed-icons/imdb.svg"
+                  src="/assets/icons/detailed-icons/imdb.svg"
                   alt="film-icon"
                   className="imdbIcon"
                 />
                 <p className="imdb-text">9.8</p>
               </div>
               <img
-                src="./assets/icons/detailed-icons/fav.svg"
+                src="/assets/icons/detailed-icons/fav.svg"
                 alt="film-icon"
                 className="fav"
               />

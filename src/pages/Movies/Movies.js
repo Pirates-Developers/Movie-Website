@@ -1,11 +1,11 @@
-import "./filmebi.css";
+import "./movies.css";
 import SearchBox from "../../components/searchbox/SearchBox";
 import FilterBoxes from "../../components/FilterBoxes/FilterBoxes";
 import { FilmsData } from "../../data/FilmsData";
 
-export default function Films() {
+export default function Movies() {
   return (
-    <form>
+    <main>
       <div className="film-search-filter-div">
         <div className="film-div">
           ფილმები
@@ -21,6 +21,11 @@ export default function Films() {
         <div className="film-container">
           {FilmsData.Data.map((film) => (
             <div key={film.id} className="film">
+              <img
+                src="./assets/images/PLAY.png"
+                alt="PLAY-icon"
+                className="PLAY-img"
+              />
               <img src={film.img} alt={film.img} />
               <div className="image-texts">
                 <div className="satauri-rating">
@@ -44,6 +49,6 @@ export default function Films() {
           ))}
         </div>
       </>
-    </form>
+    </main>
   );
 }

@@ -2,6 +2,7 @@ import "./home.css";
 import { MovieData } from "../../data/MovieData";
 import SlideContent from "../../components/slide-content/SlideContent";
 import MainSlider from "../../components/main-slider/MainSlider";
+import SponsorArea from "../../components/sponsor-area/SponsorArea";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         christmas={true}
         sponsor={true}
       />
+      <SponsorArea sponsorImg="/assets/images/sponsor.png" />
       <SlideContent
         name="სერიალები"
         data={MovieData}
