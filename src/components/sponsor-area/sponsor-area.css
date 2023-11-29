@@ -1,0 +1,16 @@
+.sponsor-area img {
+  border-radius: 0.625rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .sponsor-area {
+    margin: 7.3em 0;
+  }
+
+  .sponsor-area img {
+    height: 28.3125em;
+  }
+}

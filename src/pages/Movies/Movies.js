@@ -1,9 +1,9 @@
-import "./filmebi.css";
+import "./movies.css";
 import SearchBox from "../../components/searchbox/SearchBox";
 import FilterBoxes from "../../components/FilterBoxes/FilterBoxes";
 import { FilmsData } from "../../data/FilmsData";
 
-export default function Films() {
+export default function Movies() {
   return (
     <main>
       <div className="film-search-filter-div">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function MovieCard({ data }) {
   return (
     <div className="movie-card">
-      <Link to={`/film/${data.name}`}>
+      <Link to={`/movie/${data.name}`}>
         <div className="movie-card-overlay"></div>
         <LazyLoadImage
           className="movie-img"

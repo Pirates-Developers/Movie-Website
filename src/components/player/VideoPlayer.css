@@ -1,0 +1,17 @@
+.plyr {
+  max-height: 800px;
+  width: 100%;
+}
+.plyr__control:hover {
+  background: #3e3e3e83 !important;
+}
+.plyr__progress--played,
+.plyr__progress--played:hover,
+.plyr__progress--buffer,
+.plyr__progress--buffer:hover {
+  background: red !important; /* Change the progress bar color to red */
+}
+.plyr__tooltip--seek {
+  background: red !important;
+  cursor: pointer; /* Change the tooltip color to red */
+}

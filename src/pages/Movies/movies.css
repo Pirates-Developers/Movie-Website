@@ -46,8 +46,6 @@
   width: 344px;
   height: 459px;
   object-fit: cover;
-}.film img:hover {
-  opacity: 25%;
 }
 /* Text box */
 .image-texts {
@@ -93,17 +91,4 @@
   margin-right: 28px;
   font-size: 18px;
   color: #ffffff;
-}
-
-.PLAY-img {
-  position: absolute;
-  width: 157px !important;
-  height: 157px !important;
-  display: none;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.film:hover .PLAY-img {
-  display: block;
 }
