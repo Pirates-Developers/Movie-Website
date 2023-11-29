@@ -5,8 +5,6 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import MovieCard from "../movie-card/MovieCard";
-import christmasHat from "./images/christmas-hat.png";
-import sponsorImg from "./images/sponsor.png";
 
 const filterCategories = ["დღის", "კვირის", "წლის"];
 function SlideContent({ name, data, filter, christmas, sponsor }) {
@@ -34,10 +32,10 @@ function SlideContent({ name, data, filter, christmas, sponsor }) {
             &nbsp;&nbsp;
             {name}
             {christmas && (
-              <div className="christmas-hat-div">
+              <div className="christmas-hat-container">
                 <img
                   className="christmas-hat"
-                  src={christmasHat}
+                  src="/assets/icons/christmas-hat.svg"
                   alt="Christmas Hat"
                 />
               </div>
@@ -76,11 +74,6 @@ function SlideContent({ name, data, filter, christmas, sponsor }) {
           ))}
         </Swiper>
       </div>
-      {sponsor && (
-        <div className="sponsor-image-container">
-          <img src={sponsorImg} alt="Sponsor" />
-        </div>
-      )}
     </section>
   );
 }
