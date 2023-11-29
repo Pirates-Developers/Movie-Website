@@ -93,3 +93,9 @@
   font-size: 18px;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 900px) {
+  .search-input {
+    display: none;
+  }
+}

@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import ErrorPage from "../components/404page/ErrorPage";
 import Films from "../pages/Films/Films";
+import Movie from "../pages/Movies/Movie";
+
 
 // Layout
 import RootLayout from "../layouts/root-layout/RootLayout";
@@ -17,6 +19,7 @@ export const router = createBrowserRouter(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="/films" element={<Films />} />
+        <Route path="/movie" element={<Movie />} />
         {/* other routes */}
         <Route path="*" element={<ErrorPage />} />
       </Route>

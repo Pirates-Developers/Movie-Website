@@ -85,3 +85,9 @@
     font-size: 0.7em;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    display: none !important;
+  }
+}
