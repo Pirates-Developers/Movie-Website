@@ -182,9 +182,8 @@
 .movie-searched-items {
   position: absolute;
   top: 77.812px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 85%;
+  left: 0;
+  width: 97%;
   background-color: var(--black);
   opacity: 0;
   overflow: auto;
@@ -230,7 +229,7 @@
 
   .movie-slider-title > h1 {
     font-size: 4.75em;
-    text-wrap: wrap;
+    /* text-wrap: wrap; // unknown property error */
   }
 
   .movie-slider-description {

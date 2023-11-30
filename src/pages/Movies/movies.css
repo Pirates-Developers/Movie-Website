@@ -13,38 +13,33 @@
   margin-bottom: 49px;
 }
 /* ფილმები */
-.PLAY-img,
-.film img {
-  transition: 0.3s ease;
-}
-
-.films-main {
-  padding: 0;
-}
 .film-container {
   margin-top: 200px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
-  padding: 0px 210px 0px 152px;
+  gap: 2%;
+  padding: 0px 7.92% 0px 7.92%;
 }
 
+.film-main {
+  width: 100%;
+}
 .film {
   position: relative;
-  gap: 28px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 74px;
+  margin-bottom: 25px;
 }
 .film img {
   width: 344px;
   height: 459px;
+}.film img:hover {
+  opacity: 0.25;
   object-fit: cover;
 }
-.film img:hover {
-  opacity: 25%;
-}
+
 /* Text box */
 .image-texts {
   width: 344px;
@@ -66,7 +61,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 /* font sizes & color & positions */
 .h1 {
   margin-top: 9px;
@@ -100,7 +94,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .film:hover .PLAY-img {
   opacity: 1;
 }

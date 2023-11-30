@@ -22,7 +22,7 @@ export default function Movies() {
           {FilmsData.Data.map((film) => (
             <div key={film.id} className="film">
               <img
-                src="/assets/icons/header-slide-icon/movie-card-play.svg"
+                src="./assets/images/PLAY.png"
                 alt="PLAY-icon"
                 className="PLAY-img"
               />

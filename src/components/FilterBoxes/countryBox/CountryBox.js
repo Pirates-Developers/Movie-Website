@@ -33,7 +33,7 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
   };
 
   return (
-    <div className="filter-radius">
+    <div className="filter-radius" onClick={toggleDropdown}>
       <div className="filter-box">
         <input
           placeholder="ქვეყანა"
