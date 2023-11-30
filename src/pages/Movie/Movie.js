@@ -10,7 +10,7 @@ export default function Movie() {
       <SearchBox />
       <div className="marginer"></div>
       <VideoPlayer />
-      <div className="free-banner"></div>
+      <div className="free-banner">სპონსორის სივრცე</div>
       <div className="details-container">
         <div className="details-container-inner">
           <div className="image-triler">

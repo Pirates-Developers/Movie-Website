@@ -2,6 +2,7 @@
   margin-top: 24px;
   margin-left: 64px;
   margin-right: 64px;
+  overflow-x: hidden;
 }
 .player-margin {
   margin-top: 40px;
@@ -12,6 +13,13 @@
   height: 200px;
   background-color: #fff;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-family: FiraGO;
+  font-size: 28px;
+  font-weight: 500;
 }
 .marginer {
   margin-top: 20px;
@@ -135,6 +143,9 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  .search-div {
+    display: none;
+  }
   .free-banner {
     display: none;
   }

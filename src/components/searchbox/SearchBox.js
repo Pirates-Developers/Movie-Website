@@ -1,3 +1,4 @@
+import "./search-box.css"
 import React, { useState } from "react";
 
 function SearchBox() {
