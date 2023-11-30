@@ -17,13 +17,9 @@
   margin-top: 200px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
-  gap: 2%;
   padding: 0px 7.92% 0px 7.92%;
 }
 
-.film-main {
-  width: 100%;
-}
 .film {
   position: relative;
   border-radius: 10px;

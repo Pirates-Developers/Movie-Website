@@ -230,7 +230,7 @@
 
   .movie-slider-title > h1 {
     font-size: 4.75em;
-    text-wrap: wrap;
+    /* text-wrap: wrap; problem warning */
   }
 
   .movie-slider-description {

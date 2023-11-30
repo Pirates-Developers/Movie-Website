@@ -18,35 +18,37 @@ export default function Movies() {
         <FilterBoxes />
       </div>
       <>
-        <div className="film-container">
-          {FilmsData.Data.map((film) => (
-            <div key={film.id} className="film">
-              <img
-                src="./assets/images/PLAY.png"
-                alt="PLAY-icon"
-                className="PLAY-img"
-              />
-              <img src={film.img} alt={film.img} />
-              <div className="image-texts">
-                <div className="satauri-rating">
-                  <div className="start">
-                    <h3 className="h1">{film.name}</h3>
+        <div className="film-height">
+          <div className="film-container">
+            {FilmsData.Data.map((film) => (
+              <div key={film.id} className="film">
+                <img
+                  src="./assets/images/PLAY.png"
+                  alt="PLAY-icon"
+                  className="PLAY-img"
+                />
+                <img src={film.img} alt={film.img} />
+                <div className="image-texts">
+                  <div className="satauri-rating">
+                    <div className="start">
+                      <h3 className="h1">{film.name}</h3>
+                    </div>
+                    <div className="end">
+                      <p className="p1">{film.rating}</p>
+                    </div>
                   </div>
-                  <div className="end">
-                    <p className="p1">{film.rating}</p>
-                  </div>
-                </div>
-                <div className="title-imdb">
-                  <div className="start">
-                    <h3 className="h2">{film.Title}</h3>
-                  </div>
-                  <div className="end">
-                    <p className="p2"> {film.IMDB} </p>
+                  <div className="title-imdb">
+                    <div className="start">
+                      <h3 className="h2">{film.Title}</h3>
+                    </div>
+                    <div className="end">
+                      <p className="p2"> {film.IMDB} </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </>
     </main>
