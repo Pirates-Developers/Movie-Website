@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import Draggable from "react-draggable";
 
-function RatingSelector({ isOpen, toggleDropdown }) {
-  const [ratingStart, setRatingStart] = useState(0);
-  const [ratingEnd, setRatingEnd] = useState(10);
+function YearRatingBox({ isOpen, toggleDropdown }) {
+  const [ratingStart, setRatingStart] = useState(1980);
+  const [ratingEnd, setRatingEnd] = useState(2024);
+  const yearRange = 2024 - 1980;
+  const draggableWidth = 533;
+  const scalingFactor = draggableWidth / yearRange;
+
+  const calculateYear = (xPosition) => {
+    return Math.round(xPosition / scalingFactor) + 1980;
+  };
 
   const handleStartDrag = (e, data) => {
-    setRatingStart(Math.min(Math.round(data.x / 50), ratingEnd));
+    setRatingStart(Math.min(calculateYear(data.x), ratingEnd));
   };
 
   const handleEndDrag = (e, data) => {
-    setRatingEnd(Math.max(Math.round(data.x / 50), ratingStart));
+    setRatingEnd(Math.max(calculateYear(data.x), ratingStart));
   };
 
   return (
@@ -20,7 +27,7 @@ function RatingSelector({ isOpen, toggleDropdown }) {
           placeholder="IMDb Rating"
           readOnly
           className="language-input"
-          value={`${ratingStart} - ${ratingEnd}/10`}
+          value={`${ratingStart} - ${ratingEnd}/2024`}
         />
         <div className="bottom-arrow" onClick={toggleDropdown}>
           <img
@@ -50,7 +57,11 @@ function RatingSelector({ isOpen, toggleDropdown }) {
                     "linear-gradient(90deg, rgba(255, 0, 188, 0.71) 0%, rgba(0, 178, 255, 0.6816) 100%)",
                 }}
               ></div>
-              <Draggable axis="x" bounds="parent" onDrag={handleStartDrag}>
+              <Draggable
+                axis="x"
+                bounds={{ left: 0, right: (ratingEnd - 1980) * scalingFactor }}
+                onDrag={handleStartDrag}
+              >
                 <div
                   style={{
                     position: "absolute",
@@ -75,7 +86,14 @@ function RatingSelector({ isOpen, toggleDropdown }) {
                   ></div>
                 </div>
               </Draggable>
-              <Draggable axis="x" bounds="parent" onDrag={handleEndDrag}>
+              <Draggable
+                axis="x"
+                bounds={{
+                  left: (ratingStart - 1980) * scalingFactor,
+                  right: draggableWidth,
+                }}
+                onDrag={handleEndDrag}
+              >
                 <div
                   style={{
                     position: "absolute",
@@ -108,4 +126,4 @@ function RatingSelector({ isOpen, toggleDropdown }) {
   );
 }
 
-export default RatingSelector;
+export default YearRatingBox;

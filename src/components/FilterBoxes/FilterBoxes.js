@@ -4,6 +4,7 @@ import GenreBox from "./genreBox/GenreBox";
 import LanguageBox from "./languageBox/LanguageBox";
 import CountryBox from "./countryBox/CountryBox";
 import RatingBox from "./ratingBox/RatingBox";
+import YearRatingBox from "./yearRatingBox/yearRatingBox";
 
 export default function FilterBoxes() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -27,17 +28,10 @@ export default function FilterBoxes() {
         toggleDropdown={() => handleToggleDropdown("language")}
       />
       <></>
-      <div className="filter-radius">
-        <div className="filter-box">
-          <h3>წელი</h3>
-          <div className="bottom-arrow">
-            <img
-              src="./assets/images/header-films-img/Vector.png"
-              alt="arrow-icon"
-            />
-          </div>
-        </div>
-      </div>
+      <YearRatingBox
+        isOpen={openDropdown === "year"}
+        toggleDropdown={() => handleToggleDropdown("year")}
+      />
       <></>
       <RatingBox
         isOpen={openDropdown === "rating"}
