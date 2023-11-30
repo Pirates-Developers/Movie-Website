@@ -98,6 +98,7 @@
 
   /* Below 900px */
   @media only screen and (width <= 900px) {
+    /* Add New Header Styles Below 900px */
     .header {
       padding: 2.12em 0.94em 1.5em;
       background: linear-gradient(
@@ -121,6 +122,154 @@
 
     .header-search {
       margin-right: 2em;
+    }
+  }
+
+  /* Below 780px */
+  @media only screen and (width <= 780px) {
+    .header {
+      padding: 2em 0.9em 1.45em;
+    }
+
+    .header-logo {
+      font-size: 1.65em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 2em;
+      height: 2em;
+    }
+
+    .header-search {
+      margin-right: 2em;
+    }
+  }
+
+  /* Below 650px */
+  @media only screen and (width <= 650px) {
+    .header {
+      padding: 2em 0.9em 1.3em;
+    }
+
+    .header-logo {
+      font-size: 1.55em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 1.9em;
+      height: 1.9em;
+    }
+
+    .header-search {
+      margin-right: 1.8em;
+    }
+  }
+
+  /* Below 550px */
+  @media only screen and (width <= 550px) {
+    .header {
+      padding: 1.8em 0.9em 1em;
+    }
+
+    .header-logo {
+      font-size: 1.45em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    .header-search {
+      margin-right: 1.65em;
+    }
+  }
+
+  /* Below 465px */
+  @media only screen and (width <= 465px) {
+    .header {
+      padding: 1.65em 0.9em 0.85em;
+    }
+
+    .header-logo {
+      font-size: 1.35em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 1.65em;
+      height: 1.65em;
+    }
+
+    .header-search {
+      margin-right: 1.65em;
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (width <= 425px) {
+  .header {
+    padding: 1.65em 0.9em 0.85em;
+  }
+
+  .header-logo {
+    font-size: 1.3em;
+  }
+
+  .header-search,
+  .header-menu {
+    width: 1.55em;
+    height: 1.55em;
+  }
+
+  .header-search {
+    margin-right: 1.69em;
+  }
+
+  /* Below 390px */
+  @media only screen and (width <= 390px) {
+    .header {
+      padding: 1.62em 0.8em 0.85em;
+    }
+
+    .header-logo {
+      font-size: 1.25em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    .header-search {
+      margin-right: 1.65em;
+    }
+  }
+
+  
+  /* Below 350px */
+  @media only screen and (width <= 350px) {
+    .header {
+      padding: 1.58em 0.8em 0.85em;
+    }
+
+    .header-logo {
+      font-size: 1.2em;
+    }
+
+    .header-search,
+    .header-menu {
+      width: 1.45em;
+      height: 1.45em;
+    }
+
+    .header-search {
+      margin-right: 1.4em;
     }
   }
 }
