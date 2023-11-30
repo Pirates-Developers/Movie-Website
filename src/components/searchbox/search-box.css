@@ -1,9 +1,11 @@
 .search-input {
-  text-align: center;
-  outline: none;
   height: 62px;
-  background: #dedede26;
-  color: #e7e7e7b2;
   width: 100%;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: #DEDEDE26;
   font-family: FontAwesome, var(--firago);
+  z-index: 10;
 }

@@ -1,4 +1,4 @@
-import "./search-box.css"
+import "./search-box.css";
 import React, { useState } from "react";
 
 function SearchBox() {
@@ -33,7 +33,6 @@ function SearchBox() {
         id="search"
         type="search"
         placeholder={!isFocused ? `ძებნა ${spaceSymbol} ${searchSymbol}` : ""}
-        autoFocus
         required
         value={searchTerm}
         onChange={handleChange}
