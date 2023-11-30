@@ -14,14 +14,13 @@ function RatingSelector({ isOpen, toggleDropdown }) {
   };
 
   return (
-    <div className="filter-radius">
+    <div className="filter-radius" onClick={toggleDropdown}>
       <div className="filter-box">
         <input
           placeholder="IMDb Rating"
           readOnly
           className="language-input"
           value={`${ratingStart} - ${ratingEnd}/10`}
-          onClick={toggleDropdown}
         />
         <div className="bottom-arrow" onClick={toggleDropdown}>
           <img
