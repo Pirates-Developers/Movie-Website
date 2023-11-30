@@ -1,11 +1,35 @@
+import React, { useState, useEffect } from "react";
 import "./movies.css";
 import SearchBox from "../../components/searchbox/SearchBox";
 import FilterBoxes from "../../components/FilterBoxes/FilterBoxes";
 import { FilmsData } from "../../data/FilmsData";
 
 export default function Movies() {
+  const [moviesToShow, setMoviesToShow] = useState([]);
+  const [page, setPage] = useState(1);
+
+  const loadMovies = () => {
+    const startIndex = (page - 1) * 10;
+    const selectedMovies = FilmsData.Data.slice(startIndex, startIndex + 10);
+    setMoviesToShow(moviesToShow.concat(selectedMovies));
+  };
+
+  useEffect(() => {
+    loadMovies();
+  }, [page]);
+
+  const handleScroll = (event) => {
+    const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
+    if (scrollHeight - scrollTop === clientHeight) {
+      setPage(page + 1);
+    }
+  };
+
   return (
-    <main>
+    <main
+      onScroll={handleScroll}
+      style={{ overflowY: "auto", height: "100vh" }}
+    >
       <div className="film-search-filter-div">
         <div className="film-div">
           ფილმები
@@ -20,7 +44,7 @@ export default function Movies() {
       <>
         <div className="film-height">
           <div className="film-container">
-            {FilmsData.Data.map((film) => (
+            {moviesToShow.map((film) => (
               <div key={film.id} className="film">
                 <img
                   src="./assets/images/PLAY.png"
