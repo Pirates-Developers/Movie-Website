@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,14 +20,16 @@ function Footer() {
             სერიალები
           </Link>
           <Link to="/animes" className="footer-link">
-            ანიმე/ანიმაციები
+            {window.innerWidth <= 425 ? "ანიმე" : "ანიმე/ანიმაციები"}
           </Link>
           <Link to="/aboutus" className="footer-link">
             ჩვენ შესახებ
           </Link>
-          <Link to="/contact" className="footer-link">
-            კონტაქტი
-          </Link>
+          {window.innerWidth > 425 && (
+            <Link to="/contact" className="footer-link">
+              კონტაქტი
+            </Link>
+          )}
         </div>
         <div className="footer-social-links d-flex align-items-center justify-content-center">
           <Link

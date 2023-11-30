@@ -115,8 +115,8 @@
 
     .header-search,
     .header-menu {
-      width: 2.2em;
-      height: 2.2em;
+      width: 2.1em;
+      height: 2.1em;
       cursor: pointer;
     }
 
@@ -251,7 +251,6 @@
     }
   }
 
-  
   /* Below 350px */
   @media only screen and (width <= 350px) {
     .header {
