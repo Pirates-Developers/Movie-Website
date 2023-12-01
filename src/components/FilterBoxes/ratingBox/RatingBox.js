@@ -1,4 +1,4 @@
-import "./ratingBox.css"
+import "./ratingBox.css";
 import { useState } from "react";
 import { Box, Slider } from "@mui/material";
 
@@ -34,7 +34,7 @@ function RatingSelector({ isOpen, toggleDropdown }) {
           placeholder="IMDb Rating"
           readOnly
           className="language-input"
-          value={`რეიტინგი  ${ratingRange[0]} - ${ratingRange[1]}`}
+          value={`რეიტინგი`}
         />
         <div className="bottom-arrow">
           <img

@@ -26,10 +26,7 @@ export default function Movies() {
   };
 
   return (
-    <main
-      onScroll={handleScroll}
-      style={{ overflowY: "auto", height: "100vh" }}
-    >
+    <main onScroll={handleScroll} style={{ height: "100vh" }}>
       <div className="film-search-filter-div">
         <div className="film-div">
           ფილმები

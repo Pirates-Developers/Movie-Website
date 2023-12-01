@@ -7,7 +7,7 @@
 .filter-radius {
   color: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 50px;
+  border-radius: 12px;
   width: 314px;
   height: 71px;
   font-size: 24px;
@@ -52,4 +52,88 @@
 .css-nnid7-MuiSlider-valueLabel {
   background-color: var(--black) !important;
   font-size: 18px !important;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 900px) {
+  .film-div {
+    font-size: 18px;
+    gap: 8px;
+  }.film-div > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .formm {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+    width: 100%;
+  }
+  .filter-radius {
+   color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 12px;
+   width: 100%;
+   height: 38px;
+   font-size: 24px;
+  }
+  .film-search-filter-div {
+    margin-top: 2.0625rem;
+    margin-left: 2.0625rem;
+    margin-right: 2.0625rem;
+  }
+
+  .filter-box {
+    margin: 9px 20px 10px 20px;
+  }.filter-box>input{
+    font-size: 14px;
+  }
+
+  .film-container {
+    margin-top: 10%;
+  }
+
+  /* dropdown div */
+  .language-dropdown {
+    width: 100%;
+    margin-left: 0;
+    background-color: red;
+    margin-top: 0;
+    position: static;
+    background: linear-gradient(0deg, #000000);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .country-dropdown {
+    z-index: 5;
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 514px;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: auto;
+    background: black;
+    color: #FFFFFF;
+    border-radius: 5px;
+    height: auto;
+  }
+  .country-option {
+  display: block;
+  align-items: unset;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(100% / 20);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  }
+
 }

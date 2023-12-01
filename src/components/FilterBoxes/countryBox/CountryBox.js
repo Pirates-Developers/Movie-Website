@@ -56,7 +56,7 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
                   checked={selectedLanguages.includes(language)}
                   onChange={() => handleLanguageSelection(language)}
                 />
-                <label htmlFor={language}>{language} </label>
+                <label htmlFor={language}>{language}</label>
               </div>
             ))}
           </div>
