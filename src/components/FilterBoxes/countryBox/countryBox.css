@@ -25,6 +25,8 @@
   border-radius: 10px;
 }
 .country-option {
+  display: flex;
+  align-items: center;
   flex: 0 0 calc(100% / 20);
   margin-right: 10px;
   margin-bottom: 10px;

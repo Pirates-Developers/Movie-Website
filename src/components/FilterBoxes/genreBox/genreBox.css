@@ -24,6 +24,8 @@
   box-sizing: border-box;
 }
 .genre-option {
+  display: flex;
+  align-items: center;
   padding: 20px;
     flex: 0 0 calc(33.33% - 10px);
       margin-right: 10px;
