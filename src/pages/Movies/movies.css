@@ -14,10 +14,16 @@
 }
 /* ფილმები */
 .film-container {
-  margin-top: 200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
-  padding: 0px 7.92% 4% 7.92%;
+  margin-top: 180px;
+  margin-bottom: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+.film-container > .all-movie-card {
+  margin: 38px 14px;
 }
 /* font sizes & color & positions */
 .h1 {

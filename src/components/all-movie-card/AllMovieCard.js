@@ -20,27 +20,27 @@ function AllMovieCard({ data }) {
         />
         <div className="all-movie-card-body">
           <div>
-            <div>
-              <h1 className="all-movie-title">{data.name}</h1>
+            <div className="all-movie-title">
+              <h1>{data.name}</h1>
             </div>
-            <div>
-              <p className="all-movie-rating">{data.imdb}</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <h2 className="all-movie-title-english">TItle</h2>
-            </div>
-            <div>
-              <p className="all-movie-imdb">IMDB</p>
+            <div className="all-movie-rating">
+              <p>{data.imdb}</p>
             </div>
           </div>
           <div>
-            <div>
-              <p className="all-movie-genres">asdasd</p>
+            <div className="all-movie-title-english">
+              <h2>TItle</h2>
             </div>
-            <div>
-              <p className="all-movie-year">asdasd</p>
+            <div className="all-movie-imdb">
+              <p>IMDB</p>
+            </div>
+          </div>
+          <div>
+            <div className="all-movie-genres">
+              <p>{data.category}</p>
+            </div>
+            <div className="all-movie-year">
+              <h3>{data.year}</h3>
             </div>
           </div>
         </div>
