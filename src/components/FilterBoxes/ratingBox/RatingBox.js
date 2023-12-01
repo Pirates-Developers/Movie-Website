@@ -1,28 +1,42 @@
-import React, { useState } from "react";
-import Draggable from "react-draggable";
+import "./ratingBox.css"
+import { useState } from "react";
+import { Box, Slider } from "@mui/material";
 
 function RatingSelector({ isOpen, toggleDropdown }) {
-  const [ratingStart, setRatingStart] = useState(0);
-  const [ratingEnd, setRatingEnd] = useState(10);
+  const minDistance = 0;
+  const startRating = 0.0;
+  const endRating = 10.0;
 
-  const handleStartDrag = (e, data) => {
-    setRatingStart(Math.min(Math.round(data.x / 50), ratingEnd));
-  };
+  const [ratingRange, setRatingRange] = useState([startRating, endRating]);
 
-  const handleEndDrag = (e, data) => {
-    setRatingEnd(Math.max(Math.round(data.x / 50), ratingStart));
+  const handleChangeRange = (_, newValue, activeThumb) => {
+    if (!Array.isArray(newValue)) {
+      return;
+    }
+
+    if (activeThumb === 0) {
+      setRatingRange([
+        Math.min(newValue[0], ratingRange[1] - minDistance),
+        ratingRange[1],
+      ]);
+    } else {
+      setRatingRange([
+        ratingRange[0],
+        Math.max(newValue[1], ratingRange[0] + minDistance),
+      ]);
+    }
   };
 
   return (
     <div className="filter-radius">
-      <div className="filter-box">
+      <div className="filter-box" onClick={toggleDropdown}>
         <input
           placeholder="IMDb Rating"
           readOnly
           className="language-input"
-          value={`${ratingStart} - ${ratingEnd}/10`}
+          value={`რეიტინგი  ${ratingRange[0]} - ${ratingRange[1]}`}
         />
-        <div className="bottom-arrow" onClick={toggleDropdown}>
+        <div className="bottom-arrow">
           <img
             src="./assets/images/header-films-img/Vector.png"
             alt="arrow-icon"
@@ -31,8 +45,20 @@ function RatingSelector({ isOpen, toggleDropdown }) {
         </div>
       </div>
       {isOpen && (
-        <div className="language-dropdown">
-          <div style={{ backgroundColor: "black" }}>
+        <div className="language-dropdown rating-range">
+          <Box className="slider-box">
+            <Slider
+              className="slider"
+              value={ratingRange}
+              onChange={handleChangeRange}
+              valueLabelDisplay="auto"
+              step={0.1}
+              min={startRating}
+              max={endRating}
+              disableSwap
+            />
+          </Box>
+          {/* <div style={{ backgroundColor: "black" }}>
             <div
               style={{
                 position: "relative",
@@ -101,7 +127,7 @@ function RatingSelector({ isOpen, toggleDropdown }) {
                 </div>
               </Draggable>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>

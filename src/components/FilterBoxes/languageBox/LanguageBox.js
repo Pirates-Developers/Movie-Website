@@ -18,9 +18,9 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
 
   return (
     <div className="filter-radius">
-      <div className="filter-box">
+      <div className="filter-box" onClick={toggleDropdown}>
         <input placeholder="ენა" readOnly className="language-input" />
-        <div className="bottom-arrow" onClick={toggleDropdown}>
+        <div className="bottom-arrow">
           <img
             src="./assets/images/header-films-img/Vector.png"
             alt="arrow-icon"

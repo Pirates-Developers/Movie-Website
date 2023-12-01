@@ -5,14 +5,51 @@
   gap: 33px;
 }
 .filter-radius {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50px;
   width: 314px;
   height: 71px;
   font-size: 24px;
-}.filter-box {
+}
+.filter-radius:hover,
+.filter-radius:hover ::placeholder {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.filter-box {
+  margin: 20px 30px 20px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.slider > .MuiSlider-track,
+.slider > .MuiSlider-rail {
+  height: 10px !important;
+  border: none;
+}
+.slider > .MuiSlider-track {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 188, 0.71) 0%,
+    rgba(0, 178, 255, 0.6816) 100%
+  );
+}
+.slider > .MuiSlider-rail {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 188, 0.71) 0%,
+    rgba(0, 178, 255, 0.6816) 100%
+  );
+  opacity: 0.4;
+}
+.slider > .MuiSlider-thumb {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  box-shadow: none !important;
+}
+.css-nnid7-MuiSlider-valueLabel {
+  background-color: var(--black) !important;
+  font-size: 18px !important;
 }
