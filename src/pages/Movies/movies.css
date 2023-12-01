@@ -19,44 +19,6 @@
   grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
   padding: 0px 7.92% 4% 7.92%;
 }
-
-.film {
-  position: relative;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 25px;
-}
-.film img {
-  width: 344px;
-  height: 459px;
-}.film img:hover {
-  opacity: 0.25;
-  object-fit: cover;
-}
-
-/* Text box */
-.image-texts {
-  width: 344px;
-  height: 90px;
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
-  backdrop-filter: blur(9px);
-  padding: 10px;
-}
-
-.satauri-rating,
-.title-imdb {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 /* font sizes & color & positions */
 .h1 {
   margin-top: 9px;
@@ -79,17 +41,4 @@
   margin-right: 28px;
   font-size: 18px;
   color: #ffffff;
-}
-
-.PLAY-img {
-  position: absolute;
-  width: 157px !important;
-  height: 157px !important;
-  opacity: 0;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.film:hover .PLAY-img {
-  opacity: 1;
 }
