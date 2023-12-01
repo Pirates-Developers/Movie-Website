@@ -1,4 +1,9 @@
 import "./filterboxes.css";
+import "./countryBox/countryBox.css";
+import "./genreBox/genreBox.css";
+import "./languageBox/languageBox.css";
+import "./ratingBox/ratingBox.css";
+import "./yearRatingBox/yearRatingBox.css";
 import { useState } from "react";
 import GenreBox from "./genreBox/GenreBox";
 import LanguageBox from "./languageBox/LanguageBox";

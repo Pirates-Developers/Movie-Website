@@ -34,7 +34,7 @@ function YearRatingBox({ isOpen, toggleDropdown }) {
           placeholder="IMDb Rating"
           readOnly
           className="language-input"
-          value={`წელი  ${yearRange[0]} - ${yearRange[1]}`}
+          value={`წელი`}
         />
         <div className="bottom-arrow">
           <img
