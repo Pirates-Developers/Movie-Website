@@ -54,13 +54,13 @@
 }
 .details-container {
   display: flex;
-  align-items: start;
+  align-items: flex-start; /* flex- */
   justify-content: space-between;
   margin-top: 64px;
 }
 .details-container-inner {
   display: flex;
-  align-items: start;
+  align-items: flex-start; /* flex- */
 }
 .detailed-text {
   color: #fff;
@@ -89,7 +89,7 @@
 }
 .text-parent {
   display: flex;
-  align-items: start;
+  align-items: flex-start; /* flex- */
   justify-content: space-between;
   gap: 56px;
   width: 100%;
