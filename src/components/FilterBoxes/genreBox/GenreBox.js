@@ -35,8 +35,8 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
   };
 
   return (
-    <div className="filter-radius">
-      <div className="filter-box" onClick={toggleDropdown}>
+    <div className="filter-radius" onClick={toggleDropdown}>
+      <div className="filter-box">
         <input placeholder="ჟანრი" readOnly className="genre-input" />
         <div className="bottom-arrow">
           <img
