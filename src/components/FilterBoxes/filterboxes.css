@@ -12,6 +12,9 @@
   height: 71px;
   font-size: 24px;
 }
+.boxes-parent {
+  display: flex;
+}
 .filter-radius:hover,
 .filter-radius:hover ::placeholder {
   border-color: var(--blue);
@@ -111,19 +114,43 @@
     font-size: 16px;
   }
 
+  /* language dropdown */
+    .language-dropdown {
+      width: 240px;
+      z-index: 1;
+      margin-top: 14px;
+      position: absolute;
+      color: #ffffff;
+      border-radius: 5px;
+      margin-top: 25px;
+      padding: 20px 10px 10px 0px;
+      box-sizing: border-box;
+    }
+  
+    .reallanguage-dropdown {
+      max-height: 127px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      background: black;
+      color: #FFFFFF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
   /* country dropdowns */
   .language-dropdown {
     margin-left: 0;
     margin-top: 0;
     position: static;
-    background: linear-gradient(0deg, #000000);
-    color: #ffffff;
+    background: none;
+    color: black;
     padding: 0px;
+    border-radius: 2px;
     box-sizing: border-box;
   }
   .country-dropdown {
     z-index: 5;
-    width: 300px;
+    width: 200px;
     gap: 10px;
     max-height: 221px;
     overflow-x: auto;
@@ -145,7 +172,7 @@
 
   /* genre dropdowns*/
   .genre-dropdown {
-  width: 104%;
+  width: 74%;
   background: black;
   color: #FFFFFF;
   border-radius: 5px;
@@ -155,5 +182,6 @@
   overflow-y: auto;
   }
   /* rating dropdown */
+  
 
 }

@@ -32,18 +32,20 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
       </div>
       {isOpen && (
         <div className="language-dropdown">
-          {languages.map((language) => (
-            <div key={language} className="language-option">
-              <input
-                type="checkbox"
-                className="language-buttons"
-                id={language}
-                checked={selectedLanguages.includes(language)}
-                onChange={() => handleLanguageSelection(language)}
-              />
-              <label htmlFor={language}>{language} </label>
-            </div>
-          ))}
+          <div className="reallanguage-dropdown">
+            {languages.map((language) => (
+              <div key={language} className="language-option">
+                <input
+                  type="checkbox"
+                  className="language-buttons"
+                  id={language}
+                  checked={selectedLanguages.includes(language)}
+                  onChange={() => handleLanguageSelection(language)}
+                />
+                <label htmlFor={language}>{language} </label>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
