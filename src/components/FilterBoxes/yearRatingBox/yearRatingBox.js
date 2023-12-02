@@ -60,6 +60,7 @@ function YearRatingBox({ isOpen, toggleDropdown }) {
               disableSwap
             />
           </Box>
+          <div>YEAR</div>
         </div>
       )}
     </div>

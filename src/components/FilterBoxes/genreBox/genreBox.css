@@ -12,25 +12,51 @@
 .language-dropdown {
   z-index: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 683px) {
 .genre-dropdown {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   background: black;
   color: #FFFFFF;
-  border-radius: 5px;
-  width: 938px;
+  width: 635px;
   box-sizing: border-box;
 }
+}
+@media screen and (min-width: 474px) and (max-width: 682px){
+  .genre-dropdown {
+      display: flex;
+      flex-wrap:nowrap;
+      justify-content: flex-start;
+      flex-direction: column;
+      background: black;
+      color: #FFFFFF;
+      width: 300px;
+      max-height: 227px;
+      box-sizing: border-box;
+        overflow-x: hidden;
+          overflow-y: auto;
+    }
+        .genre-option {
+          display: flex;
+          align-items: center;
+          flex: 0 0 calc(100% - 10px);
+          margin-bottom: 10px;
+        }
+}
+.genre-parent {
+    z-index: 1;
+      margin-top: 80px;
+      position: absolute;
+      background: black;
+      color: #ffffff;
+      padding: 10px 0px 8px 0px;
 }
 .genre-option {
   display: flex;
   align-items: center;
-  padding: 20px;
-    flex: 0 0 calc(33.33% - 10px);
-      margin-right: 10px;
-      margin-bottom: 20px;
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 10px;
 }
 .genre-buttons {
   appearance: none;
@@ -42,7 +68,7 @@
   border: none;
   outline: none;
   margin-right: 20px;
-  margin-left: 13px;
+  margin-left: 8px;
   width: 38px;
   height: 38px;
   border-radius: 10px;

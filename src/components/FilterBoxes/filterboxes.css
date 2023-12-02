@@ -58,7 +58,57 @@
   font-size: 18px !important;
 }
 
-@media screen and (min-width: 0px) and (max-width: 900px) {
+@media screen and (min-width: 474px) and (max-width: 683px) {
+
+}
+
+@media screen and (min-width: 474px) and (max-width: 772px){
+  .country-dropdown {
+    max-height: 227px;
+  }
+  .film-div {
+    margin-left: 0.5rem;
+  }
+.film-search-filter-div {
+   margin-top: 2.0625rem;
+   margin-left: 1.5625rem;
+   margin-right: 1.5625rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 473px) {
+  .genre-buttons {
+      border-radius: 5px !important;
+    }
+  
+    .genre-buttons::before {
+      border-radius: 5px !important;
+    }
+
+  .language-buttons {
+      border-radius: 5px;
+    }
+  
+    .language-buttons::before {
+      border-radius: 5px;
+    }
+
+  .genre-parent {
+    width: 228px;
+    margin-top: 40px !important;
+  }
+  .language-dropdown {
+    margin-top: 43px !important;
+  }
+  .year-range {
+    width: 228px !important;
+  }.rating-range {
+    width: 228px !important;
+  }
+  .country-parent {
+    margin-top: 40px !important;
+  }.country-dropdown {
+    width: 228px !important;
+  }
   .film-div {
     font-size: 18px;
     gap: 8px;
@@ -78,9 +128,6 @@
     width: 100%;
   }
   .filter-radius {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 12px;
     width: 100%;
     height: 38px;
     font-size: 24px;
@@ -106,8 +153,8 @@
   .country-option > input,
   .genre-option > input,
   .language-option > input {
-    width: 16px;
-    height: 16px;
+    width: 16px !important;
+    height: 16px !important;
   }
   .country-option > label,
   .genre-option > label,
@@ -115,74 +162,21 @@
     font-size: 16px;
   }
 
-  /* language dropdown */
-    .language-dropdown {
-      width: 240px;
-      z-index: 1;
-      margin-top: 14px;
-      position: absolute;
-      color: #ffffff;
-      border-radius: 5px;
-      margin-top: 25px;
-      padding: 20px 10px 10px 0px;
-      box-sizing: border-box;
-    }
-  
-    .reallanguage-dropdown {
-      max-height: 127px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      background: black;
-      color: #FFFFFF;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
   /* country dropdowns */
-  .language-dropdown {
-    margin-left: 0;
-    margin-top: 0;
-    position: static;
-    background: none;
-    color: black;
-    padding: 0px;
-    border-radius: 2px;
-    box-sizing: border-box;
-  }
   .country-dropdown {
-    z-index: 5;
+    z-index: 1;
     width: 200px;
-    gap: 10px;
-    max-height: 221px;
+    gap: 3px;
+    max-height: 127px;
     overflow-x: auto;
     overflow-y: auto;
-    background: black;
-    color: #ffffff;
-    border-radius: 5px;
-    height: auto;
-  }
-  .country-option {
-    display: block;
-    align-items: unset;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: calc(100% / 20);
-    margin-right: 10px;
-    margin-bottom: 10px;
   }
 
   /* genre dropdowns*/
   .genre-dropdown {
-  width: 74%;
-  background: black;
-  color: #FFFFFF;
-  border-radius: 5px;
-  max-height: 221px;
-  box-sizing: border-box;
+  max-height: 127px;
   overflow-x: auto;
   overflow-y: auto;
   }
-  /* rating dropdown */
-  
 
 }

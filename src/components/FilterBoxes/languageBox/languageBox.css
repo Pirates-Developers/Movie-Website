@@ -14,14 +14,13 @@
   cursor: pointer;
 }
 .language-dropdown {
+  width: 300px;
   z-index: 1;
-  margin-top: 14px;
+  margin-top: 85px;
   position: absolute;
   background: black;
   color: #ffffff;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box;
+  padding: -10px 10px 10px 10px;
 }
 .language-dropdown div {
   padding: 5px 0;
@@ -48,7 +47,7 @@
   margin-left: 13px;
   width: 38px;
   height: 38px;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
 
   overflow: hidden;
@@ -63,7 +62,7 @@
   background-image: linear-gradient(139.64deg, #ff00b8 0%, #12b5fb 98.01%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .language-buttons:checked::before {
   opacity: 1;

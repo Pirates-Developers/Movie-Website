@@ -1,15 +1,16 @@
   .year-range {
-    width: 700px;
+    width: 300px;
   }
 .year-range,
 .year-range > .slider-box {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .year-range > .slider-box,
 .year-range > .slider-box > .slider {
   width: 100%;
 }
 .year-range > .slider-box {
-  padding: 20px 10px !important;
+  padding: 20px 40px 0px 40px !important;
 }

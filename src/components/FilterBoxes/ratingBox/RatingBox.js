@@ -60,6 +60,7 @@ function RatingSelector({ isOpen, toggleDropdown }) {
               disableSwap
             />
           </Box>
+          <div>IMDB</div>
           {/* <div style={{ backgroundColor: "black" }}>
             <div
               style={{

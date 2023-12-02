@@ -49,7 +49,7 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
         </div>
       </div>
       {isOpen && (
-        <div className="language-dropdown">
+        <div className="genre-parent">
           <div className="genre-dropdown">
             {languages.map((language) => (
               <div key={language} className="genre-option">

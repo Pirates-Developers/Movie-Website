@@ -1,15 +1,16 @@
 .rating-range {
-  width: 548px;
+  width: 300px;
 }
 .rating-range,
 .rating-range > .slider-box {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .rating-range > .slider-box,
 .rating-range > .slider-box > .slider {
   width: 100%;
 }
 .rating-range > .slider-box {
-  padding: 20px 10px !important;
+  padding: 20px 40px 0px 40px !important;
 }
