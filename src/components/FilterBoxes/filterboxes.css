@@ -54,7 +54,7 @@
   font-size: 18px !important;
 }
 
-@media screen and (min-width: 290px) and (max-width: 900px) {
+@media screen and (min-width: 0px) and (max-width: 900px) {
   .film-div {
     font-size: 18px;
     gap: 8px;

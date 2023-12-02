@@ -35,15 +35,17 @@ function LanguageSelector({ isOpen, toggleDropdown }) {
   };
 
   return (
-    <div className="filter-radius">
-      <div className="filter-box" onClick={toggleDropdown}>
-        <input placeholder="ჟანრი" readOnly className="genre-input" />
-        <div className="bottom-arrow">
-          <img
-            src="./assets/images/header-films-img/Vector.png"
-            alt="arrow-icon"
-            style={{ transform: isOpen ? "rotate(0deg)" : "rotate(180deg)" }}
-          />
+    <div className="boxes-parent">
+      <div className="filter-radius" onClick={toggleDropdown}>
+        <div className="filter-box">
+          <input placeholder="ჟანრი" readOnly className="genre-input" />
+          <div className="bottom-arrow">
+            <img
+              src="./assets/images/header-films-img/Vector.png"
+              alt="arrow-icon"
+              style={{ transform: isOpen ? "rotate(0deg)" : "rotate(180deg)" }}
+            />
+          </div>
         </div>
       </div>
       {isOpen && (

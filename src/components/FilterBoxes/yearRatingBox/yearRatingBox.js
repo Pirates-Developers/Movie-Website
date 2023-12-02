@@ -28,20 +28,22 @@ function YearRatingBox({ isOpen, toggleDropdown }) {
   };
 
   return (
-    <div className="filter-radius">
-      <div className="filter-box" onClick={toggleDropdown}>
-        <input
-          placeholder="IMDb Rating"
-          readOnly
-          className="language-input"
-          value={`წელი`}
-        />
-        <div className="bottom-arrow">
-          <img
-            src="./assets/images/header-films-img/Vector.png"
-            alt="arrow-icon"
-            style={{ transform: isOpen ? "rotate(0deg)" : "rotate(180deg)" }}
+    <div className="boxes-parent">
+      <div className="filter-radius" onClick={toggleDropdown}>
+        <div className="filter-box">
+          <input
+            placeholder="IMDb Rating"
+            readOnly
+            className="language-input"
+            value={`წელი`}
           />
+          <div className="bottom-arrow">
+            <img
+              src="./assets/images/header-films-img/Vector.png"
+              alt="arrow-icon"
+              style={{ transform: isOpen ? "rotate(0deg)" : "rotate(180deg)" }}
+            />
+          </div>
         </div>
       </div>
       {isOpen && (
