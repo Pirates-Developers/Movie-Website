@@ -3,14 +3,12 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function AllMovieCard({ data }) {
+function AllMovieCard({ data, reference }) {
   const IMG_URL = "https://image.tmdb.org/t/p/w500";
 
   return (
-    <div key={data.id} className="all-movie-card">
-      <Link
-      // to={`/movie/${data.name}`}
-      >
+    <div key={data.id} className="all-movie-card" ref={reference}>
+      <Link to={`/movie/${data.name}`}>
         {window.innerWidth > 900 && (
           <img
             src="/assets/icons/header-slide-icon/movie-card-play.svg"
