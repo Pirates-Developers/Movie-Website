@@ -30,6 +30,25 @@ function InfiniteScroll({ data, hasMore, setPageNumber }) {
               key={index}
             />
           );
+        } else if (index === 7) {
+          return (
+            <>
+              <AllMovieCard data={movie} key={index} />
+              <div
+                style={{
+                  width: "85%",
+                  height: "204px",
+                  backgroundColor: "#fff",
+                  color: "#000",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <h1>სპონსორის სივრცე</h1>
+              </div>
+            </>
+          );
         } else {
           return <AllMovieCard data={movie} key={index} />;
         }
