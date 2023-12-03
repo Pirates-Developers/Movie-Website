@@ -1,6 +1,6 @@
-  .year-range {
-    width: 300px;
-  }
+.year-range {
+  width: 300px;
+}
 .year-range,
 .year-range > .slider-box {
   display: flex;
